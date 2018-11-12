@@ -1,0 +1,105 @@
+.container-width {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+}
+
+footer#colophon.site-footer {
+    background: url("../../assets/images/dark-wood.png");
+}
+
+
+
+p {
+    color: white;
+}
+
+a, span.phone {
+    color: white;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
+
+a, span.email {
+    color: white;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
+
+span.phone:hover {
+    text-decoration: underline;
+}
+
+span.email:hover {
+    text-decoration: underline;
+}
+
+i {
+    color: white;
+    font-size: 20px;
+    padding: 16px 8px 8px 0;
+}
+
+div.site-info {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 70px 0 50px 0;
+}
+
+div.contact-info {
+    display: grid;
+    flex-basis: 25%;
+    h3 {
+        color: #d99054;
+        text-transform: uppercase;
+        margin: 0;
+        letter-spacing: 2px;
+        font-family: 'Novecento Bold', sans-serif;
+        padding-bottom: 8px;
+        line-height: 1.5;
+        font-size: 19px;
+    }
+}
+
+div.business-hours {
+    flex-basis: 25%; 
+    h3 {
+        color: #d99054;
+        text-transform: uppercase;
+        margin: 0;
+        letter-spacing: 2px;
+        font-family: 'Novecento Bold', sans-serif;
+        padding-bottom: 8px;
+        font-size: 19px;
+    } 
+    p {
+        margin: 0;
+        padding: 12px 0 8px 0;
+    } 
+}
+
+span.days {
+    font-family: 'Merriweather-Bold', serif;
+}
+
+div.logo-footer {
+    flex-basis: 50%;
+    justify-content: flex-end;
+    display: flex;
+}
+
+img.footer-logo {
+    width: 280px;
+    height: auto;
+}
+
+p.copyright {
+    text-align: center;
+    padding: 26px 0;
+    font-family: 'Novecento', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+}
