@@ -14,8 +14,8 @@
 				<div class="site-info">
 					<div class="contact-info">
 					    <h3>Contact Info</h3>
-                        <i class="fas fa-envelope"><a href=" "><span class="email"> info@inhabitent.com</span></a></i>
-						<i class="fas fa-phone"><a href=" "><span class="phone"> 778-456-7891</span></a></i>
+                        <i class="fas fa-envelope"><a href="mailto:info@inhabitent.com"><span class="email"> info@inhabitent.com</span></a></i>
+						<i class="fas fa-phone"><a href="tel:778-456-7891"><span class="phone"> 778-456-7891</span></a></i>
 						<div class="social-icon">
 							<i class="fab fa-facebook-square"></i>
 							<i class="fab fa-twitter-square"></i>
