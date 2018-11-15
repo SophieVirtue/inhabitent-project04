@@ -14,13 +14,10 @@
 }
 
 .blog .site-main {
-    width: 73%;
-    border-right: 1px solid #e1e1e1;
-    padding-right: 56px;
     .entry-header {
         position: relative;
         img {
-            width: 780px;
+            width: 760px;
             height: auto;
         }
         h2 {
@@ -29,7 +26,7 @@
             top: 0;
             margin-top: 36px;
             padding: 12px 24px;
-            max-width: 75%;
+            max-width: 70%;
             line-height: 1.25;
             a {
                 color: white;
@@ -38,6 +35,9 @@
                 font-family: 'Novecento Bold', sans-serif;
                 letter-spacing: 2px;
                 font-size: 33.6px; 
+                &:hover {
+                    color: #f0e4d1;
+                }
             }
         }
     }
@@ -52,9 +52,30 @@
         text-transform: uppercase;
         line-height: 0;
         margin-bottom: 8px;
+        margin-right: 57px;
     }
-    .entry-content p{
-        margin-bottom: 1.5rem;
+    .entry-content {
+        p{
+            margin-bottom: 1.5rem;
+            font-family: 'Merriweather-Light', serif;
+            max-width: 92%;
+        }
+        a {
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+            font-family: 'Novecento', sans-serif;
+            padding: .75rem 1.5rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            line-height: 1;
+            &:hover {
+                background-color: #248a83;
+                color: white;
+                border: none;
+            }
+        }
     }
 }
 

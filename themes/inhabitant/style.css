@@ -353,6 +353,22 @@ html {
   margin-right: auto;
   width: 1120px; }
 
+body.blog .site-content, body.single-post .site-content, body.page-template-default .site-content, body.search-results .site-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #e1e1e1; }
+  body.blog .site-content .content-area, body.single-post .site-content .content-area, body.page-template-default .site-content .content-area, body.search-results .site-content .content-area {
+    width: 73%;
+    border-right: 1px solid #e1e1e1;
+    padding-right: 5%; }
+  body.blog .site-content .widget-area, body.single-post .site-content .widget-area, body.page-template-default .site-content .widget-area, body.search-results .site-content .widget-area {
+    width: 27%;
+    padding-left: 5%; }
+
 *,
 *:before,
 *:after {
@@ -629,6 +645,10 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+/* Content Style */
+.widget-area {
+  padding-top: 3rem; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -738,43 +758,61 @@ object {
 .hentry {
   margin: 0 0 4.5rem; }
 
-.blog .site-main {
-  width: 73%;
-  border-right: 1px solid #e1e1e1;
-  padding-right: 56px; }
-  .blog .site-main .entry-header {
-    position: relative; }
-    .blog .site-main .entry-header img {
-      width: 780px;
-      height: auto; }
-    .blog .site-main .entry-header h2 {
-      position: absolute;
-      background-color: #248a83;
-      top: 0;
-      margin-top: 36px;
-      padding: 12px 24px;
-      max-width: 75%;
-      line-height: 1.25; }
-      .blog .site-main .entry-header h2 a {
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: 'Novecento Bold', sans-serif;
-        letter-spacing: 2px;
-        font-size: 33.6px; }
-  .blog .site-main .entry-meta {
+.blog .site-main .entry-header {
+  position: relative; }
+  .blog .site-main .entry-header img {
+    width: 760px;
+    height: auto; }
+  .blog .site-main .entry-header h2 {
     position: absolute;
     background-color: #248a83;
-    bottom: 0;
-    right: 0;
-    padding: 16px 24px;
+    top: 0;
+    margin-top: 36px;
+    padding: 12px 24px;
+    max-width: 70%;
+    line-height: 1.25; }
+    .blog .site-main .entry-header h2 a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: 'Novecento Bold', sans-serif;
+      letter-spacing: 2px;
+      font-size: 33.6px; }
+      .blog .site-main .entry-header h2 a:hover {
+        color: #f0e4d1; }
+
+.blog .site-main .entry-meta {
+  position: absolute;
+  background-color: #248a83;
+  bottom: 0;
+  right: 0;
+  padding: 16px 24px;
+  color: white;
+  font-family: 'Novecento', sans-serif;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 8px;
+  margin-right: 57px; }
+
+.blog .site-main .entry-content p {
+  margin-bottom: 1.5rem;
+  font-family: 'Merriweather-Light', serif;
+  max-width: 92%; }
+
+.blog .site-main .entry-content a {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-family: 'Novecento', sans-serif;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  line-height: 1; }
+  .blog .site-main .entry-content a:hover {
+    background-color: #248a83;
     color: white;
-    font-family: 'Novecento', sans-serif;
-    text-transform: uppercase;
-    line-height: 0;
-    margin-bottom: 8px; }
-  .blog .site-main .entry-content p {
-    margin-bottom: 1.5rem; }
+    border: none; }
 
 /* Find Us - contact.php */
 /* About - about.php */

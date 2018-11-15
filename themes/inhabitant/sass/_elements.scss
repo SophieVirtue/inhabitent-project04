@@ -12,6 +12,24 @@ html {
   margin-right: auto;
   width: 1120px;
 }
+body.blog, body.single-post, body.page-template-default, body.search-results{
+.site-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  display: flex;
+  border-top: 1px solid #e1e1e1;
+  .content-area {
+    width: 73%;
+    border-right: 1px solid #e1e1e1;
+    padding-right: 5%;
+  }
+  .widget-area {
+    width: 27%;
+    padding-left: 5%
+  }
+}
+}
 
 *,
 *:before,
