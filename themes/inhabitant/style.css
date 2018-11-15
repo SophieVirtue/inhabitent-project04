@@ -359,8 +359,7 @@ body.blog .site-content, body.single-post .site-content, body.page-template-defa
   width: 1120px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  border-top: 1px solid #e1e1e1; }
+  display: flex; }
   body.blog .site-content .content-area, body.single-post .site-content .content-area, body.page-template-default .site-content .content-area, body.search-results .site-content .content-area {
     width: 73%;
     border-right: 1px solid #e1e1e1;
@@ -636,7 +635,7 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5rem;
+  margin: 0 0 3rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
@@ -648,6 +647,40 @@ a {
 /* Content Style */
 .widget-area {
   padding-top: 3rem; }
+  .widget-area h2 {
+    color: #2f1339;
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+    font-family: 'Novecento Bold', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .widget-area p {
+    margin-bottom: 0.5rem;
+    font-family: 'Merriweather-Light', serif; }
+    .widget-area p i {
+      margin-right: 0.5rem; }
+    .widget-area p a {
+      color: #248a83;
+      text-decoration: none; }
+      .widget-area p a:hover {
+        color: #2f1339; }
+    .widget-area p span {
+      padding-left: 4px; }
+      .widget-area p span.space {
+        padding-left: 28px; }
+    .widget-area p span.day-of-week {
+      padding: 0;
+      font-family: 'Merriweather-Bold', serif; }
+  .widget-area ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0; }
+    .widget-area ul a {
+      color: #248a83;
+      text-decoration: none;
+      font-family: 'Merriweather-Light', serif; }
+      .widget-area ul a:hover {
+        color: #2f1339; }
 
 /*--------------------------------------------------------------
 # Content
@@ -916,3 +949,6 @@ p.copyright {
       -ms-flex-align: center;
           align-items: center;
   background-size: cover; }
+
+.site-header {
+  border-bottom: 1px solid #e1e1e1; }

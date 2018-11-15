@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 .widget {
-	margin: 0 0 $base__space-unit;
+	margin: 0 0 3rem;
 
 	/* Make sure select elements fit in widgets. */
 	select {
@@ -20,4 +20,49 @@
 
 .widget-area {
 	padding-top: 3rem;
+	h2 {
+		color: #2f1339;
+		margin-bottom: 1.5rem;
+		line-height: 1.25;
+		font-family: 'Novecento Bold', sans-serif;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	p {
+		margin-bottom: 0.5rem;
+		font-family: 'Merriweather-Light', serif;
+		i {
+			margin-right: 0.5rem;
+		}
+		a {
+			color: #248a83;
+			text-decoration: none;
+			&:hover {
+				color: #2f1339;	
+			}
+		}
+		span {
+			padding-left: 4px;
+			&.space{
+				padding-left: 28px;	
+			}
+		}
+		span.day-of-week{
+			padding: 0;
+			font-family: 'Merriweather-Bold', serif;
+		}
+	}
+	ul {
+		list-style-type: none;
+		margin-left: 0;
+		padding-left: 0;
+		a {
+			color: #248a83;
+			text-decoration: none;
+			font-family: 'Merriweather-Light', serif;
+			&:hover {
+				color: #2f1339;	
+			}
+		}
+	}
 }
