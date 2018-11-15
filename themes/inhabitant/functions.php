@@ -83,7 +83,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function red_starter_scripts() {
-	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
 
 	wp_enqueue_style('inhabitant-fontawesome', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 	wp_enqueue_script('jquery');
@@ -116,5 +116,9 @@ function inhabitent_remove_submenus() {
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
+
+add_filter( 'excerpt_length', function($length) {
+    return 50;
+} );
 
 

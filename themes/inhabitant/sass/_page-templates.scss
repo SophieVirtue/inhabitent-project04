@@ -3,3 +3,59 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+/* Journal - index.php */
+#primary.content-area {
+    padding: 48px 0;
+}
+
+.blog .site-main {
+    width: 73%;
+    border-right: 1px solid #e1e1e1;
+    padding-right: 56px;
+    .entry-header {
+        position: relative;
+        img {
+            width: 780px;
+            height: auto;
+        }
+        h2 {
+            position: absolute;
+            background-color: #248a83;
+            top: 0;
+            margin-top: 36px;
+            padding: 12px 24px;
+            max-width: 75%;
+            line-height: 1.25;
+            a {
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: 'Novecento Bold', sans-serif;
+                letter-spacing: 2px;
+                font-size: 33.6px; 
+            }
+        }
+    }
+    .entry-meta {
+        position: absolute;
+        background-color: #248a83;
+        bottom: 0;
+        right: 0;
+        padding: 16px 24px;
+        color: white;
+        font-family: 'Novecento', sans-serif;
+        text-transform: uppercase;
+        line-height: 0;
+        margin-bottom: 8px;
+    }
+    .entry-content p{
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Find Us - contact.php */
+
+/* About - about.php */
+
+/* Single product - single-product.php */
