@@ -17,18 +17,21 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
+				
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+  <a href="<?php the_posts_navigation(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
 
-			<?php endwhile; ?>
+<div class="product-info">
+<p><?php the_title(); ?>
+<div class="ellipsis"></div>
+<?php echo CFS()->get( 'price' ); ?></p>
+</div>
 
-			<?php the_posts_navigation(); ?>
+<?php endwhile; ?>
 
 		<?php else : ?>
 
@@ -39,5 +42,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
