@@ -12,34 +12,38 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
           <div class="container-width archive">
 			<header class="page-header">
+			
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
-				
+					
 				$terms = get_terms(array(
 				'taxonomy' => 'product_type', 
 				'hide_empty' => 0,
-				));
-
-				foreach($terms as $term): ?>
+				)); ?>
 				<div class="archive-term">
+				<?php foreach($terms as $term): ?>
+
 				<p><a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a></p>
-				</div>
+				
 			<?php endforeach;
 			?>
+			</div>
 				
 			</header><!-- .page-header -->
-
+<div class="product-grid">
 <?php while ( have_posts() ) : the_post(); ?>
-
-    <a href="<?php the_posts_navigation(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
-
+	<div class="product-item">
+		<div class="thumbnail">
+    <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
+		</div>
     <div class="product-info">
-    <p><?php the_title(); ?>
+    <p><?php the_title(); ?></p>
     <div class="ellipsis"></div>
-    <?php echo CFS()->get( 'price' ); ?></p>
+    <p><?php echo '$' . CFS()->get( 'price' ); ?></p>
     </div>
-
+	</div>
 <?php endwhile; ?>
+			</div>
 
             </div><!--.container-width-->
 		</main><!-- #main -->

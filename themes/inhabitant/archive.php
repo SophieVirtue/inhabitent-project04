@@ -23,7 +23,7 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-  <a href="<?php the_posts_navigation(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
+  <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
 
 <div class="product-info">
 <p><?php the_title(); ?>

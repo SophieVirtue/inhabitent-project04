@@ -766,6 +766,65 @@ object {
     color: white;
     border: none; }
 
+/* Archive */
+.archive .site-main {
+  padding-top: 14px; }
+  .archive .site-main header {
+    text-align: center;
+    font-family: 'Novecento Bold', sans-serif;
+    text-transform: uppercase; }
+    .archive .site-main header h1 {
+      font-size: 2.4rem;
+      letter-spacing: 2px;
+      margin-bottom: 0; }
+    .archive .site-main header .archive-term {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      padding-bottom: 26px;
+      border-bottom: 1px dashed #c8c8c8; }
+      .archive .site-main header .archive-term p {
+        padding: 0 1.5rem; }
+        .archive .site-main header .archive-term p a {
+          text-decoration: none;
+          font-family: 'Novecento', sans-serif;
+          color: #248a83; }
+          .archive .site-main header .archive-term p a:hover {
+            color: #2f1339; }
+  .archive .site-main .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 24px;
+    padding-top: 48px;
+    font-family: 'Merriweather-Light', serif; }
+    .archive .site-main .product-grid .product-item {
+      border: 1px solid #e1e1e1; }
+      .archive .site-main .product-grid .product-item .thumbnail img {
+        height: 250px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        border-bottom: 5px solid #e1e1e1; }
+      .archive .site-main .product-grid .product-item .product-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 5px 16px 12px 16px; }
+        .archive .site-main .product-grid .product-item .product-info p {
+          margin: 0; }
+        .archive .site-main .product-grid .product-item .product-info .ellipsis {
+          overflow: hidden;
+          margin: 0 3px;
+          -webkit-box-flex: 1;
+              -ms-flex: 1;
+                  flex: 1; }
+          .archive .site-main .product-grid .product-item .product-info .ellipsis:after {
+            content: '....................'; }
+
 /* Find Us - contact.php */
 /* About - about.php */
 /* Single product - single-product.php */
