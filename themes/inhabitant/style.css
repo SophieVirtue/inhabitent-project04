@@ -1035,6 +1035,89 @@ h2.comments-title {
             content: '....................'; }
 
 /* Find Us - contact.php */
+.contact-page article {
+  margin-bottom: 62px; }
+
+.contact-page h1.entry-title {
+  margin-top: 0px;
+  text-transform: uppercase;
+  font-family: 'Novecento Bold', sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  line-height: 1.3;
+  margin-bottom: 16px; }
+
+.contact-page figure {
+  margin-left: 0;
+  margin-top: 6px; }
+  .contact-page figure iframe {
+    border: 0;
+    width: 760px;
+    height: 300px; }
+
+.contact-page h2 {
+  text-transform: uppercase;
+  color: #2f1339;
+  font-family: 'Novecento Bold', sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 2px;
+  margin-top: 19px;
+  margin-bottom: 15px; }
+
+.contact-page p {
+  margin-top: 10px;
+  margin-bottom: 18px;
+  width: 95%;
+  font-family: 'Merriweather-Light', serif; }
+
+.contact-page form {
+  display: block; }
+  .contact-page form p {
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 10px; }
+    .contact-page form p label {
+      text-transform: uppercase;
+      color: #2f1339;
+      font-family: 'Novecento', sans-serif;
+      font-size: 1.1rem;
+      line-height: 1; }
+    .contact-page form p span {
+      color: #d99054; }
+  .contact-page form .box {
+    padding-bottom: 22px; }
+    .contact-page form .box input {
+      color: #666;
+      background-color: #f4f4f4;
+      border: 1px solid #e1e1e1;
+      border-radius: 0;
+      width: 380px;
+      height: 39px; }
+  .contact-page form .big-box textarea {
+    color: #666;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+    width: 760px;
+    height: 286px;
+    margin-bottom: 22px; }
+  .contact-page form input {
+    background: #248a83;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-family: 'Novecento' ,sans-serif;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-transform: uppercase;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .contact-page form input:hover {
+      background: #165752;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+
 /* About - about.php */
 /* Single product - single-product.php */
 article.type-product {
