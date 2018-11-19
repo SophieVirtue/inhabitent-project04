@@ -796,11 +796,20 @@ object {
           color: #248a83; }
           .archive .site-main header .archive-term p a:hover {
             color: #2f1339; }
+    .archive .site-main header .taxonomy-description p {
+      text-transform: none;
+      font-family: 'Merriweather-Light', serif;
+      padding-top: 5px;
+      font-size: 16.3px;
+      padding-bottom: 49px;
+      border-bottom: 1px dashed #c8c8c8;
+      margin-bottom: 0; }
   .archive .site-main .product-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 24px;
     padding-top: 48px;
+    padding-bottom: 25px;
     font-family: 'Merriweather-Light', serif; }
     .archive .site-main .product-grid .product-item {
       border: 1px solid #e1e1e1; }
@@ -816,6 +825,8 @@ object {
         padding: 5px 16px 12px 16px; }
         .archive .site-main .product-grid .product-item .product-info p {
           margin: 0; }
+          .archive .site-main .product-grid .product-item .product-info p.price {
+            font-size: 0.9rem; }
         .archive .site-main .product-grid .product-item .product-info .ellipsis {
           overflow: hidden;
           margin: 0 3px;
@@ -828,6 +839,59 @@ object {
 /* Find Us - contact.php */
 /* About - about.php */
 /* Single product - single-product.php */
+article.type-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  margin-bottom: 98px; }
+  article.type-product header {
+    width: 50%;
+    padding-right: 22px; }
+  article.type-product .entry-content {
+    width: 50%;
+    padding-left: 23px;
+    margin: 0; }
+    article.type-product .entry-content h1 {
+      margin-top: 0;
+      font-family: 'Novecento Bold', sans-serif;
+      color: #d99054;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 2.4rem;
+      line-height: 1.25;
+      margin-bottom: 7px; }
+    article.type-product .entry-content p.price {
+      font-family: 'Novecento', sans-serif;
+      font-size: 1.8rem;
+      margin-top: 7px; }
+    article.type-product .entry-content p span {
+      line-height: 1.75;
+      font-family: 'Merriweather-Light', serif;
+      padding-bottom: 1px; }
+    article.type-product .entry-content button {
+      border-radius: 0;
+      border-color: black;
+      background: white;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      color: black;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      padding: .75rem 1.5rem; }
+      article.type-product .entry-content button:hover {
+        color: white;
+        background: #248a83;
+        border-color: #248a83; }
+      article.type-product .entry-content button p {
+        margin: 0;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        font-family: 'Novecento', sans-serif; }
+        article.type-product .entry-content button p i {
+          padding-right: 10px; }
+
 footer#colophon.site-footer {
   background: url("../../assets/images/dark-wood.png"); }
 
@@ -854,7 +918,7 @@ div.site-info {
       margin: 0;
       letter-spacing: 2px;
       font-family: 'Novecento Bold', sans-serif;
-      padding-bottom: 8px;
+      padding-bottom: 4px;
       line-height: 1.5;
       font-size: 19px; }
     div.site-info div.contact-info i {
@@ -884,11 +948,12 @@ div.site-info {
       margin: 0;
       letter-spacing: 2px;
       font-family: 'Novecento Bold', sans-serif;
-      padding-bottom: 8px;
-      font-size: 19px; }
+      padding-bottom: 4px;
+      font-size: 19px;
+      line-height: 1.5; }
     div.site-info div.business-hours p {
       margin: 0;
-      padding: 12px 0 8px 0; }
+      padding: 8px 0 8px 0; }
     div.site-info div.business-hours span.days {
       font-family: 'Merriweather-Bold', serif; }
   div.site-info div.logo-footer {

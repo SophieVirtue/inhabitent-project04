@@ -111,12 +111,22 @@
                 }
             }
         }
+        .taxonomy-description p {
+            text-transform: none;
+            font-family: 'Merriweather-Light', serif;
+            padding-top: 5px;
+            font-size: 16.3px;
+            padding-bottom: 49px;
+            border-bottom: 1px dashed #c8c8c8;
+            margin-bottom: 0;
+        }
     }
     .product-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 24px;
         padding-top: 48px;
+        padding-bottom: 25px;
         font-family: 'Merriweather-Light', serif;
         .product-item {
             border:1px solid #e1e1e1;
@@ -130,6 +140,9 @@
                 padding: 5px 16px 12px 16px;
                 p {
                     margin: 0;
+                    &.price {
+                        font-size: 0.9rem;
+                    }
                 }
                 .ellipsis {
                     overflow: hidden;
@@ -149,3 +162,61 @@
 /* About - about.php */
 
 /* Single product - single-product.php */
+
+article.type-product {
+    display: flex;
+    padding-top: 50px;
+    margin-bottom: 98px;
+    header {
+        width: 50%;
+        padding-right: 22px;
+    }
+    .entry-content {
+        width: 50%;
+        padding-left: 23px;
+        margin: 0;
+        h1 {
+            margin-top: 0;
+            font-family: 'Novecento Bold', sans-serif;
+            color: #d99054;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 2.4rem;
+            line-height: 1.25;
+            margin-bottom: 7px;
+        }
+        p.price {
+            font-family: 'Novecento', sans-serif;
+            font-size: 1.8rem;
+            margin-top: 7px;
+        }
+        p span {
+            line-height: 1.75;
+            font-family: 'Merriweather-Light', serif;
+            padding-bottom: 1px;
+        }
+        button {
+            border-radius: 0;
+            border-color: black;
+            background: white;
+            box-shadow: none;
+            color: black;
+            display: inline-flex;
+            padding: .75rem 1.5rem;
+            &:hover {
+                color: white;
+                background: #248a83;
+                border-color: #248a83;
+            }
+            p {
+                margin: 0;
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                font-family: 'Novecento', sans-serif;
+                i {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
