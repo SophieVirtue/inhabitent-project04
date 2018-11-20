@@ -353,7 +353,7 @@ html {
   margin-right: auto;
   width: 1120px; }
 
-body.blog .site-content, body.post-template-default .site-content, body.page-template-default .site-content, body.search-results .site-content {
+body.blog .site-content, body.post-template-default .site-content, body.page-template-default .site-content, body.search-results .site-content, body.date .site-content {
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
@@ -361,11 +361,11 @@ body.blog .site-content, body.post-template-default .site-content, body.page-tem
   display: -ms-flexbox;
   display: flex;
   padding-top: 49px; }
-  body.blog .site-content .content-area, body.post-template-default .site-content .content-area, body.page-template-default .site-content .content-area, body.search-results .site-content .content-area {
+  body.blog .site-content .content-area, body.post-template-default .site-content .content-area, body.page-template-default .site-content .content-area, body.search-results .site-content .content-area, body.date .site-content .content-area {
     width: 73%;
     border-right: 1px solid #e1e1e1;
     padding-right: 5%; }
-  body.blog .site-content .widget-area, body.post-template-default .site-content .widget-area, body.page-template-default .site-content .widget-area, body.search-results .site-content .widget-area {
+  body.blog .site-content .widget-area, body.post-template-default .site-content .widget-area, body.page-template-default .site-content .widget-area, body.search-results .site-content .widget-area, body.date .site-content .widget-area {
     width: 27%;
     padding-left: 5%; }
 
@@ -713,12 +713,12 @@ object {
 article.post {
   margin-bottom: 24px; }
 
-.blog .site-main .entry-header, .single-post .entry-header {
+.blog .site-main .entry-header, .single-post .entry-header, .date .site-main .entry-header {
   position: relative; }
-  .blog .site-main .entry-header img, .single-post .entry-header img {
+  .blog .site-main .entry-header img, .single-post .entry-header img, .date .site-main .entry-header img {
     width: 760px;
     height: auto; }
-  .blog .site-main .entry-header h2, .blog .site-main .entry-header h1, .single-post .entry-header h2, .single-post .entry-header h1 {
+  .blog .site-main .entry-header h2, .blog .site-main .entry-header h1, .single-post .entry-header h2, .single-post .entry-header h1, .date .site-main .entry-header h2, .date .site-main .entry-header h1 {
     position: absolute;
     background-color: #248a83;
     top: 0;
@@ -731,13 +731,13 @@ article.post {
     font-family: 'Novecento Bold', sans-serif;
     letter-spacing: 2px;
     font-size: 33.6px; }
-    .blog .site-main .entry-header h2 a, .blog .site-main .entry-header h1 a, .single-post .entry-header h2 a, .single-post .entry-header h1 a {
+    .blog .site-main .entry-header h2 a, .blog .site-main .entry-header h1 a, .single-post .entry-header h2 a, .single-post .entry-header h1 a, .date .site-main .entry-header h2 a, .date .site-main .entry-header h1 a {
       color: white;
       text-decoration: none; }
-      .blog .site-main .entry-header h2 a:hover, .blog .site-main .entry-header h1 a:hover, .single-post .entry-header h2 a:hover, .single-post .entry-header h1 a:hover {
+      .blog .site-main .entry-header h2 a:hover, .blog .site-main .entry-header h1 a:hover, .single-post .entry-header h2 a:hover, .single-post .entry-header h1 a:hover, .date .site-main .entry-header h2 a:hover, .date .site-main .entry-header h1 a:hover {
         color: #f0e4d1; }
 
-.blog .site-main .entry-meta, .single-post .entry-meta {
+.blog .site-main .entry-meta, .single-post .entry-meta, .date .site-main .entry-meta {
   position: absolute;
   background-color: #248a83;
   bottom: 0;
@@ -749,48 +749,48 @@ article.post {
   line-height: 0;
   margin-bottom: 8px;
   margin-right: 57px; }
-  .blog .site-main .entry-meta a, .single-post .entry-meta a {
+  .blog .site-main .entry-meta a, .single-post .entry-meta a, .date .site-main .entry-meta a {
     text-decoration: none;
     color: white; }
-    .blog .site-main .entry-meta a:hover, .single-post .entry-meta a:hover {
+    .blog .site-main .entry-meta a:hover, .single-post .entry-meta a:hover, .date .site-main .entry-meta a:hover {
       color: #f0e4d1; }
 
-.blog .site-main .entry-content p, .single-post .entry-content p {
-  margin-bottom: 1.5rem;
-  font-family: 'Merriweather-Light', serif;
-  max-width: 92%; }
+.blog .site-main .entry-content, .single-post .entry-content, .date .site-main .entry-content {
+  margin-bottom: 72px; }
+  .blog .site-main .entry-content p, .single-post .entry-content p, .date .site-main .entry-content p {
+    margin-bottom: 1.5rem;
+    font-family: 'Merriweather-Light', serif;
+    max-width: 92%; }
+  .blog .site-main .entry-content a, .single-post .entry-content a, .date .site-main .entry-content a {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-family: 'Novecento', sans-serif;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    line-height: 1; }
+    .blog .site-main .entry-content a:hover, .single-post .entry-content a:hover, .date .site-main .entry-content a:hover {
+      background-color: #248a83;
+      color: white;
+      border: none; }
+  .blog .site-main .entry-content span, .single-post .entry-content span, .date .site-main .entry-content span {
+    line-height: 1.75; }
 
-.blog .site-main .entry-content a, .single-post .entry-content a {
-  background-color: white;
-  border: 1px solid black;
-  color: black;
-  font-family: 'Novecento', sans-serif;
-  padding: .75rem 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  line-height: 1; }
-  .blog .site-main .entry-content a:hover, .single-post .entry-content a:hover {
-    background-color: #248a83;
-    color: white;
-    border: none; }
-
-.blog .site-main .entry-content span, .single-post .entry-content span {
-  line-height: 1.75; }
-
-.blog .site-main .entry-footer, .single-post .entry-footer {
+.blog .site-main .entry-footer, .single-post .entry-footer, .date .site-main .entry-footer {
   text-transform: uppercase;
   font-family: 'Novecento', sans-serif;
   margin-bottom: 20px; }
-  .blog .site-main .entry-footer span, .single-post .entry-footer span {
+  .blog .site-main .entry-footer span, .single-post .entry-footer span, .date .site-main .entry-footer span {
     margin-right: 25px; }
-    .blog .site-main .entry-footer span a, .single-post .entry-footer span a {
+    .blog .site-main .entry-footer span a, .single-post .entry-footer span a, .date .site-main .entry-footer span a {
       text-decoration: none;
       color: #248a83; }
-      .blog .site-main .entry-footer span a:hover, .single-post .entry-footer span a:hover {
+      .blog .site-main .entry-footer span a:hover, .single-post .entry-footer span a:hover, .date .site-main .entry-footer span a:hover {
         color: #2f1339; }
 
-.blog .site-main button, .single-post button {
+.blog .site-main button, .single-post button, .date .site-main button {
   border-radius: 0;
   border-color: black;
   background: white;
@@ -801,16 +801,16 @@ article.post {
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: .75rem 1.5rem; }
-  .blog .site-main button:hover, .single-post button:hover {
+  .blog .site-main button:hover, .single-post button:hover, .date .site-main button:hover {
     color: white;
     background: #248a83;
     border-color: #248a83; }
-  .blog .site-main button p, .single-post button p {
+  .blog .site-main button p, .single-post button p, .date .site-main button p {
     margin: 0;
     font-size: 0.9rem;
     text-transform: uppercase;
     font-family: 'Novecento', sans-serif; }
-    .blog .site-main button p i, .single-post button p i {
+    .blog .site-main button p i, .single-post button p i, .date .site-main button p i {
       padding-right: 10px; }
 
 #site-navigation.main-navigation button.menu-toggle {
@@ -828,7 +828,8 @@ article.post {
   margin-right: 360px; }
 
 .single-post .entry-content {
-  width: 72%; }
+  width: 72%;
+  margin-bottom: 0; }
 
 .comments-area {
   width: 73%;
@@ -965,17 +966,17 @@ h2.comments-title {
     background: #165752; }
 
 /* Archive */
-.archive .site-main {
+.post-type-archive .site-main, .tax-product_type .site-main {
   padding-top: 14px; }
-  .archive .site-main header {
+  .post-type-archive .site-main header, .tax-product_type .site-main header {
     text-align: center;
     font-family: 'Novecento Bold', sans-serif;
     text-transform: uppercase; }
-    .archive .site-main header h1 {
+    .post-type-archive .site-main header h1, .tax-product_type .site-main header h1 {
       font-size: 2.4rem;
       letter-spacing: 2px;
       margin-bottom: 0; }
-    .archive .site-main header .archive-term {
+    .post-type-archive .site-main header .archive-term, .tax-product_type .site-main header .archive-term {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -986,15 +987,15 @@ h2.comments-title {
       line-height: 1.5;
       padding-bottom: 26px;
       border-bottom: 1px dashed #c8c8c8; }
-      .archive .site-main header .archive-term p {
+      .post-type-archive .site-main header .archive-term p, .tax-product_type .site-main header .archive-term p {
         padding: 0 1.5rem; }
-        .archive .site-main header .archive-term p a {
+        .post-type-archive .site-main header .archive-term p a, .tax-product_type .site-main header .archive-term p a {
           text-decoration: none;
           font-family: 'Novecento', sans-serif;
           color: #248a83; }
-          .archive .site-main header .archive-term p a:hover {
+          .post-type-archive .site-main header .archive-term p a:hover, .tax-product_type .site-main header .archive-term p a:hover {
             color: #2f1339; }
-    .archive .site-main header .taxonomy-description p {
+    .post-type-archive .site-main header .taxonomy-description p, .tax-product_type .site-main header .taxonomy-description p {
       text-transform: none;
       font-family: 'Merriweather-Light', serif;
       padding-top: 5px;
@@ -1002,36 +1003,36 @@ h2.comments-title {
       padding-bottom: 49px;
       border-bottom: 1px dashed #c8c8c8;
       margin-bottom: 0; }
-  .archive .site-main .product-grid {
+  .post-type-archive .site-main .product-grid, .tax-product_type .site-main .product-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 24px;
     padding-top: 48px;
     padding-bottom: 25px;
     font-family: 'Merriweather-Light', serif; }
-    .archive .site-main .product-grid .product-item {
+    .post-type-archive .site-main .product-grid .product-item, .tax-product_type .site-main .product-grid .product-item {
       border: 1px solid #e1e1e1; }
-      .archive .site-main .product-grid .product-item .thumbnail img {
+      .post-type-archive .site-main .product-grid .product-item .thumbnail img, .tax-product_type .site-main .product-grid .product-item .thumbnail img {
         height: 250px;
         -o-object-fit: cover;
            object-fit: cover;
         border-bottom: 5px solid #e1e1e1; }
-      .archive .site-main .product-grid .product-item .product-info {
+      .post-type-archive .site-main .product-grid .product-item .product-info, .tax-product_type .site-main .product-grid .product-item .product-info {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         padding: 5px 16px 12px 16px; }
-        .archive .site-main .product-grid .product-item .product-info p {
+        .post-type-archive .site-main .product-grid .product-item .product-info p, .tax-product_type .site-main .product-grid .product-item .product-info p {
           margin: 0; }
-          .archive .site-main .product-grid .product-item .product-info p.price {
+          .post-type-archive .site-main .product-grid .product-item .product-info p.price, .tax-product_type .site-main .product-grid .product-item .product-info p.price {
             font-size: 0.9rem; }
-        .archive .site-main .product-grid .product-item .product-info .ellipsis {
+        .post-type-archive .site-main .product-grid .product-item .product-info .ellipsis, .tax-product_type .site-main .product-grid .product-item .product-info .ellipsis {
           overflow: hidden;
           margin: 0 3px;
           -webkit-box-flex: 1;
               -ms-flex: 1;
                   flex: 1; }
-          .archive .site-main .product-grid .product-item .product-info .ellipsis:after {
+          .post-type-archive .site-main .product-grid .product-item .product-info .ellipsis:after, .tax-product_type .site-main .product-grid .product-item .product-info .ellipsis:after {
             content: '....................'; }
 
 /* Find Us - contact.php */
