@@ -14,11 +14,11 @@ div.site-info {
         display: grid;
         flex-basis: 25%;
         h3 {
-            color: #d99054;
+            color: $color__brand-orange;
             text-transform: uppercase;
             margin: 0;
             letter-spacing: 2px;
-            font-family: 'Novecento Bold', sans-serif;
+            font-family: $font__accent-bold;
             padding-bottom: 4px;
             line-height: 1.5;
             font-size: 19px;
@@ -31,7 +31,7 @@ div.site-info {
         a, span.phone {
             color: white;
             text-decoration: none;
-            font-family: 'Merriweather', serif;
+            font-family: $font__main;
             font-size: 16px;
             &:hover {
                 text-decoration: underline;
@@ -40,7 +40,7 @@ div.site-info {
         a, span.email {
             color: white;
             text-decoration: none;
-            font-family: 'Merriweather', serif;
+            font-family: $font__main;
             font-size: 16px;
             &:hover {
                 text-decoration: underline;
@@ -50,11 +50,11 @@ div.site-info {
     div.business-hours {
         flex-basis: 25%; 
         h3 {
-            color: #d99054;
+            color: $color__brand-orange;
             text-transform: uppercase;
             margin: 0;
             letter-spacing: 2px;
-            font-family: 'Novecento Bold', sans-serif;
+            font-family: $font__accent-bold;
             padding-bottom: 4px;
             font-size: 19px;
             line-height: 1.5;
@@ -64,7 +64,7 @@ div.site-info {
             padding: 8px 0 8px 0;
         } 
         span.days {
-            font-family: 'Merriweather-Bold', serif;
+            font-family: $font__main;
         }
     }
     div.logo-footer {
@@ -80,7 +80,7 @@ div.site-info {
 p.copyright {
     text-align: center;
     padding: 26px 0;
-    font-family: 'Novecento', sans-serif;
+    font-family: $font__accent;
     text-transform: uppercase;
     margin: 0;
     color: white;

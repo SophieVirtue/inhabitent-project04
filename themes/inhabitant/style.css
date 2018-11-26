@@ -3,7 +3,7 @@ Theme Name: Inhabitant
 Theme URI: http://underscores.me/
 Author: Sophie Virtue
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Description: A WordPress theme for Inhabitent (Project 4).
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -295,50 +295,6 @@ textarea {
   font-size: 1rem;
   line-height: 1.75; }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
-
-/* Copy */
-p {
-  margin-bottom: 1.5rem; }
-
-dfn, cite, em, i {
-  font-style: italic; }
-
-blockquote {
-  margin: 0 1.5rem; }
-
-address {
-  margin: 0 0 1.5rem; }
-
-pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-  margin-bottom: 1.6rem;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1.6rem; }
-
-code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
-  font-size: 0.9375rem; }
-
-abbr, acronym {
-  border-bottom: 1px dotted #666;
-  cursor: help; }
-
-mark, ins {
-  background: #fff9c0;
-  text-decoration: none; }
-
-big {
-  font-size: 125%; }
-
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -377,53 +333,14 @@ body.blog .site-content, body.post-template-default .site-content, body.page-tem
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #ffffff;
   /* Fallback for when there is no custom background color defined. */ }
-
-blockquote,
-q {
-  quotes: '' ''; }
-  blockquote:before, blockquote:after,
-  q:before,
-  q:after {
-    content: ''; }
-
-hr {
-  background-color: #ccc;
-  border: 0;
-  height: 1px;
-  margin-bottom: 1.5rem; }
-
-ul,
-ol {
-  margin: 0 0 1.5rem 3rem; }
-
-ul {
-  list-style: disc; }
-
-ol {
-  list-style: decimal; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5rem; }
-
-dt {
-  font-weight: bold; }
-
-dd {
-  margin: 0 1.5rem 1.5rem; }
 
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
   /* Adhere to container width. */ }
-
-table {
-  margin: 0 0 1.5rem;
-  width: 100%; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -503,12 +420,10 @@ textarea {
   width: 1px;
   overflow: hidden; }
   .screen-reader-text:focus {
-    background-color: #f1f1f1;
     border-radius: 3px;
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #21759b;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
@@ -524,62 +439,24 @@ textarea {
     /* Above WP toolbar. */ }
 
 /*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5rem; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5rem; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-.clearfix {
-  clear: both;
-  content: "";
-  display: table; }
-
-/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget {
-  margin: 0 0 3rem;
-  /* Make sure select elements fit in widgets. */ }
-  .widget select {
-    max-width: 100%; }
-
-/* Search widget. */
-.widget_search .search-submit {
-  display: none; }
-
-/* Content Style */
 .widget-area {
   padding-top: 3rem; }
   .widget-area h2 {
     color: #2f1339;
     margin-bottom: 1.5rem;
     line-height: 1.25;
-    font-family: 'Novecento Bold', sans-serif;
+    font-family: "Novecento Bold", sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase; }
   .widget-area p {
     margin-bottom: 0.5rem;
-    font-family: 'Merriweather-Light', serif; }
+    font-family: "Merriweather-Light", serif; }
     .widget-area p i {
       margin-right: 0.5rem; }
     .widget-area p a {
-      color: #248a83;
+      color: #248A83;
       text-decoration: none; }
       .widget-area p a:hover {
         color: #2f1339; }
@@ -589,115 +466,17 @@ textarea {
         padding-left: 28px; }
     .widget-area p span.day-of-week {
       padding: 0;
-      font-family: 'Merriweather-Bold', serif; }
+      font-family: "Merriweather-Bold", serif; }
   .widget-area ul {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0; }
     .widget-area ul a {
-      color: #248a83;
+      color: #248A83;
       text-decoration: none;
-      font-family: 'Merriweather-Light', serif; }
+      font-family: "Merriweather-Light", serif; }
       .widget-area ul a:hover {
         color: #2f1339; }
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/* Posts and pages */
-.sticky {
-  display: block; }
-
-.hentry {
-  margin: 0 0 1.5rem; }
-
-.updated:not(.published) {
-  display: none; }
-
-.single .byline,
-.group-blog .byline {
-  display: inline; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5rem 0 0; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5rem; }
-
-/* Asides */
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none; }
-
-/* Comments */
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0; }
-
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-  max-width: 100%; }
-
-/* Captions */
-.wp-caption {
-  margin-bottom: 1.5rem;
-  max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-  .wp-caption .wp-caption-text {
-    margin: 0.8075rem 0; }
-
-.wp-caption-text {
-  text-align: center; }
-
-/* Galleries*/
-.gallery {
-  margin-bottom: 1.5rem; }
-
-.gallery-item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%; }
-  .gallery-columns-2 .gallery-item {
-    max-width: 50%; }
-  .gallery-columns-3 .gallery-item {
-    max-width: 33.33%; }
-  .gallery-columns-4 .gallery-item {
-    max-width: 25%; }
-  .gallery-columns-5 .gallery-item {
-    max-width: 20%; }
-  .gallery-columns-6 .gallery-item {
-    max-width: 16.66%; }
-  .gallery-columns-7 .gallery-item {
-    max-width: 14.28%; }
-  .gallery-columns-8 .gallery-item {
-    max-width: 12.5%; }
-  .gallery-columns-9 .gallery-item {
-    max-width: 11.11%; }
-
-.gallery-caption {
-  display: block; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -720,7 +499,7 @@ article.post {
     height: auto; }
   .blog .site-main .entry-header h2, .blog .site-main .entry-header h1, .single-post .entry-header h2, .single-post .entry-header h1, .date .site-main .entry-header h2, .date .site-main .entry-header h1 {
     position: absolute;
-    background-color: #248a83;
+    background-color: #248A83;
     top: 0;
     margin-top: 36px;
     padding: 12px 24px;
@@ -728,7 +507,7 @@ article.post {
     line-height: 1.25;
     color: white;
     text-transform: uppercase;
-    font-family: 'Novecento Bold', sans-serif;
+    font-family: "Novecento Bold", sans-serif;
     letter-spacing: 2px;
     font-size: 33.6px; }
     .blog .site-main .entry-header h2 a, .blog .site-main .entry-header h1 a, .single-post .entry-header h2 a, .single-post .entry-header h1 a, .date .site-main .entry-header h2 a, .date .site-main .entry-header h1 a {
@@ -739,12 +518,12 @@ article.post {
 
 .blog .site-main .entry-meta, .single-post .entry-meta, .date .site-main .entry-meta {
   position: absolute;
-  background-color: #248a83;
+  background-color: #248A83;
   bottom: 0;
   right: 0;
   padding: 16px 24px;
   color: white;
-  font-family: 'Novecento', sans-serif;
+  font-family: "Novecento", sans-serif;
   text-transform: uppercase;
   line-height: 0;
   margin-bottom: 8px;
@@ -759,20 +538,20 @@ article.post {
   margin-bottom: 72px; }
   .blog .site-main .entry-content p, .single-post .entry-content p, .date .site-main .entry-content p {
     margin-bottom: 1.5rem;
-    font-family: 'Merriweather-Light', serif;
+    font-family: "Merriweather-Light", serif;
     max-width: 92%; }
   .blog .site-main .entry-content a, .single-post .entry-content a, .date .site-main .entry-content a {
     background-color: white;
     border: 1px solid black;
     color: black;
-    font-family: 'Novecento', sans-serif;
+    font-family: "Novecento", sans-serif;
     padding: .75rem 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.9rem;
     line-height: 1; }
     .blog .site-main .entry-content a:hover, .single-post .entry-content a:hover, .date .site-main .entry-content a:hover {
-      background-color: #248a83;
+      background-color: #248A83;
       color: white;
       border: none; }
   .blog .site-main .entry-content span, .single-post .entry-content span, .date .site-main .entry-content span {
@@ -780,13 +559,13 @@ article.post {
 
 .blog .site-main .entry-footer, .single-post .entry-footer, .date .site-main .entry-footer {
   text-transform: uppercase;
-  font-family: 'Novecento', sans-serif;
+  font-family: "Novecento", sans-serif;
   margin-bottom: 20px; }
   .blog .site-main .entry-footer span, .single-post .entry-footer span, .date .site-main .entry-footer span {
     margin-right: 25px; }
     .blog .site-main .entry-footer span a, .single-post .entry-footer span a, .date .site-main .entry-footer span a {
       text-decoration: none;
-      color: #248a83; }
+      color: #248A83; }
       .blog .site-main .entry-footer span a:hover, .single-post .entry-footer span a:hover, .date .site-main .entry-footer span a:hover {
         color: #2f1339; }
 
@@ -803,13 +582,13 @@ article.post {
   padding: .75rem 1.5rem; }
   .blog .site-main button:hover, .single-post button:hover, .date .site-main button:hover {
     color: white;
-    background: #248a83;
-    border-color: #248a83; }
+    background: #248A83;
+    border-color: #248A83; }
   .blog .site-main button p, .single-post button p, .date .site-main button p {
     margin: 0;
     font-size: 0.9rem;
     text-transform: uppercase;
-    font-family: 'Novecento', sans-serif; }
+    font-family: "Novecento", sans-serif; }
     .blog .site-main button p i, .single-post button p i, .date .site-main button p i {
       padding-right: 10px; }
 
@@ -839,7 +618,7 @@ article.post {
 h2.comments-title {
   text-transform: uppercase;
   padding-top: 37px;
-  font-family: 'Novecento Bold', sans-serif;
+  font-family: "Novecento Bold", sans-serif;
   font-size: 2.1rem;
   letter-spacing: 2px;
   color: #2f1339;
@@ -850,7 +629,7 @@ h2.comments-title {
   padding: 0;
   list-style: none; }
   .comment-list li.thread-even, .comment-list li.thread-odd {
-    border-bottom: 1px solid #e1e1e1; }
+    border-bottom: 1 1px solid #e1e1e1; }
 
 .comment-body {
   display: -webkit-box;
@@ -862,22 +641,22 @@ h2.comments-title {
   .comment-body .comment-content {
     padding-left: 24px; }
     .comment-body .comment-content .comment-author cite {
-      font-family: 'Merriweather-Bold', sans-serif;
+      font-family: "Merriweather-Bold", serif;
       font-style: normal; }
     .comment-body .comment-content .comment-metadata {
       color: #808080;
-      font-family: 'Merriweather-Light', sans-serif; }
+      font-family: "Merriweather-Light", serif; }
       .comment-body .comment-content .comment-metadata a {
-        color: #248a83;
+        color: #248A83;
         text-decoration: none; }
     .comment-body .comment-content p {
-      font-family: 'Merriweather-Light', sans-serif;
+      font-family: "Merriweather-Light", serif;
       margin-bottom: 13px; }
     .comment-body .comment-content .reply {
       padding-bottom: 24px; }
       .comment-body .comment-content .reply a {
         text-decoration: none;
-        color: #248a83;
+        color: #248A83;
         padding-bottom: 20px; }
 
 .children li {
@@ -886,14 +665,14 @@ h2.comments-title {
 .comment-respond .comment-reply-title {
   text-transform: uppercase;
   margin-top: 1rem;
-  font-family: 'Novecento Bold', sans-serif;
+  font-family: "Novecento Bold", sans-serif;
   font-size: 1.8rem;
   letter-spacing: 2px;
   margin-bottom: 22px; }
 
 .comment-respond form p {
   margin-top: 0px;
-  font-family: 'Merriweather-Light', serif; }
+  font-family: "Merriweather-Light", serif; }
 
 .comment-respond .comment-form-comment,
 .comment-respond .comment-form-author,
@@ -901,7 +680,7 @@ h2.comments-title {
 .comment-respond .comment-form-url {
   text-transform: uppercase;
   color: #2f1339;
-  font-family: 'Novecento', sans-serif;
+  font-family: "Novecento", sans-serif;
   font-size: 1.1rem;
   padding-bottom: 1.5rem;
   margin-bottom: 15px;
@@ -951,11 +730,11 @@ h2.comments-title {
   width: 761px; }
 
 .comment-respond input#submit {
-  background: #248a83;
+  background: #248A83;
   border: none;
   border-radius: 0;
-  color: #fff;
-  font-family: 'Novecento' ,sans-serif;
+  color: #ffffff;
+  font-family: "Novecento", sans-serif;
   font-size: .9rem;
   line-height: 1;
   padding: .75rem 1.5rem;
@@ -970,7 +749,7 @@ h2.comments-title {
   padding-top: 14px; }
   .post-type-archive .site-main header, .tax-product_type .site-main header {
     text-align: center;
-    font-family: 'Novecento Bold', sans-serif;
+    font-family: "Novecento Bold", sans-serif;
     text-transform: uppercase; }
     .post-type-archive .site-main header h1, .tax-product_type .site-main header h1 {
       font-size: 2.4rem;
@@ -991,13 +770,13 @@ h2.comments-title {
         padding: 0 1.5rem; }
         .post-type-archive .site-main header .archive-term p a, .tax-product_type .site-main header .archive-term p a {
           text-decoration: none;
-          font-family: 'Novecento', sans-serif;
-          color: #248a83; }
+          font-family: "Novecento", sans-serif;
+          color: #248A83; }
           .post-type-archive .site-main header .archive-term p a:hover, .tax-product_type .site-main header .archive-term p a:hover {
             color: #2f1339; }
     .post-type-archive .site-main header .taxonomy-description p, .tax-product_type .site-main header .taxonomy-description p {
       text-transform: none;
-      font-family: 'Merriweather-Light', serif;
+      font-family: "Merriweather-Light", serif;
       padding-top: 5px;
       font-size: 16.3px;
       padding-bottom: 49px;
@@ -1009,7 +788,7 @@ h2.comments-title {
     grid-gap: 24px;
     padding-top: 48px;
     padding-bottom: 25px;
-    font-family: 'Merriweather-Light', serif; }
+    font-family: "Merriweather-Light", serif; }
     .post-type-archive .site-main .product-grid .product-item, .tax-product_type .site-main .product-grid .product-item {
       border: 1px solid #e1e1e1; }
       .post-type-archive .site-main .product-grid .product-item .thumbnail img, .tax-product_type .site-main .product-grid .product-item .thumbnail img {
@@ -1042,7 +821,7 @@ h2.comments-title {
 .contact-page h1.entry-title {
   margin-top: 0px;
   text-transform: uppercase;
-  font-family: 'Novecento Bold', sans-serif;
+  font-family: "Novecento Bold", sans-serif;
   font-size: 2.4rem;
   letter-spacing: 2px;
   line-height: 1.3;
@@ -1059,7 +838,7 @@ h2.comments-title {
 .contact-page h2 {
   text-transform: uppercase;
   color: #2f1339;
-  font-family: 'Novecento Bold', sans-serif;
+  font-family: "Novecento Bold", sans-serif;
   font-size: 2.1rem;
   letter-spacing: 2px;
   margin-top: 19px;
@@ -1069,7 +848,7 @@ h2.comments-title {
   margin-top: 10px;
   margin-bottom: 18px;
   width: 95%;
-  font-family: 'Merriweather-Light', serif; }
+  font-family: "Merriweather-Light", serif; }
 
 .contact-page form {
   display: block; }
@@ -1080,7 +859,7 @@ h2.comments-title {
     .contact-page form p label {
       text-transform: uppercase;
       color: #2f1339;
-      font-family: 'Novecento', sans-serif;
+      font-family: "Novecento", sans-serif;
       font-size: 1.1rem;
       line-height: 1; }
     .contact-page form p span {
@@ -1103,11 +882,11 @@ h2.comments-title {
     height: 286px;
     margin-bottom: 22px; }
   .contact-page form input {
-    background: #248a83;
+    background: #248A83;
     border: none;
     border-radius: 0;
-    color: #fff;
-    font-family: 'Novecento' ,sans-serif;
+    color: #ffffff;
+    font-family: "Novecento", sans-serif;
     font-size: .9rem;
     line-height: 1;
     padding: .75rem 1.5rem;
@@ -1136,7 +915,7 @@ article.type-product {
     margin: 0; }
     article.type-product .entry-content h1 {
       margin-top: 0;
-      font-family: 'Novecento Bold', sans-serif;
+      font-family: "Novecento Bold", sans-serif;
       color: #d99054;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -1144,12 +923,12 @@ article.type-product {
       line-height: 1.25;
       margin-bottom: 7px; }
     article.type-product .entry-content p.price {
-      font-family: 'Novecento', sans-serif;
+      font-family: "Novecento", sans-serif;
       font-size: 1.8rem;
       margin-top: 7px; }
     article.type-product .entry-content p span {
       line-height: 1.75;
-      font-family: 'Merriweather-Light', serif;
+      font-family: "Merriweather-Light", serif;
       padding-bottom: 1px; }
     article.type-product .entry-content button {
       border-radius: 0;
@@ -1164,13 +943,13 @@ article.type-product {
       padding: .75rem 1.5rem; }
       article.type-product .entry-content button:hover {
         color: white;
-        background: #248a83;
-        border-color: #248a83; }
+        background: #248A83;
+        border-color: #248A83; }
       article.type-product .entry-content button p {
         margin: 0;
         font-size: 0.9rem;
         text-transform: uppercase;
-        font-family: 'Novecento', sans-serif; }
+        font-family: "Novecento", sans-serif; }
         article.type-product .entry-content button p i {
           padding-right: 10px; }
 
@@ -1199,7 +978,7 @@ div.site-info {
       text-transform: uppercase;
       margin: 0;
       letter-spacing: 2px;
-      font-family: 'Novecento Bold', sans-serif;
+      font-family: "Novecento Bold", sans-serif;
       padding-bottom: 4px;
       line-height: 1.5;
       font-size: 19px; }
@@ -1210,14 +989,14 @@ div.site-info {
     div.site-info div.contact-info a, div.site-info div.contact-info span.phone {
       color: white;
       text-decoration: none;
-      font-family: 'Merriweather', serif;
+      font-family: "Merriweather", serif;
       font-size: 16px; }
       div.site-info div.contact-info a:hover, div.site-info div.contact-info span.phone:hover {
         text-decoration: underline; }
     div.site-info div.contact-info a, div.site-info div.contact-info span.email {
       color: white;
       text-decoration: none;
-      font-family: 'Merriweather', serif;
+      font-family: "Merriweather", serif;
       font-size: 16px; }
       div.site-info div.contact-info a:hover, div.site-info div.contact-info span.email:hover {
         text-decoration: underline; }
@@ -1229,7 +1008,7 @@ div.site-info {
       text-transform: uppercase;
       margin: 0;
       letter-spacing: 2px;
-      font-family: 'Novecento Bold', sans-serif;
+      font-family: "Novecento Bold", sans-serif;
       padding-bottom: 4px;
       font-size: 19px;
       line-height: 1.5; }
@@ -1237,7 +1016,7 @@ div.site-info {
       margin: 0;
       padding: 8px 0 8px 0; }
     div.site-info div.business-hours span.days {
-      font-family: 'Merriweather-Bold', serif; }
+      font-family: "Merriweather", serif; }
   div.site-info div.logo-footer {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -1254,7 +1033,7 @@ div.site-info {
 p.copyright {
   text-align: center;
   padding: 26px 0;
-  font-family: 'Novecento', sans-serif;
+  font-family: "Novecento", sans-serif;
   text-transform: uppercase;
   margin: 0;
   color: white; }
@@ -1298,7 +1077,7 @@ p.copyright {
       width: 52px;
       height: auto; }
     .site-header .container-width a {
-      color: #248a83; }
+      color: #248A83; }
       .site-header .container-width a:hover {
         color: #2f1339; }
     .site-header .container-width li {
@@ -1307,8 +1086,6 @@ p.copyright {
       border: 0;
       padding: 0;
       margin: 0; }
-      .site-header .container-width fieldset label {
-        display: none; }
       .site-header .container-width fieldset button {
         border: 0;
         background: none;
@@ -1316,85 +1093,15 @@ p.copyright {
                 box-shadow: none;
         padding: 0; }
         .site-header .container-width fieldset button i {
-          color: #248a83;
+          color: #248A83;
           font-size: 15.5px;
           padding-left: 1.5rem; }
-
-/* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
-/* Menus */
-.main-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  font-family: 'Novecento', sans-serif;
-  text-transform: uppercase; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      position: absolute;
-      top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; } }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5rem;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  text-align: right;
-  width: 50%; }
+  .site-header .search-form .search-field {
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+  .site-header .search-form .search-field.show {
+    width: 160px;
+    opacity: 1; }

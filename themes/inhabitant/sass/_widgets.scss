@@ -2,43 +2,27 @@
 # Widgets
 --------------------------------------------------------------*/
 
-.widget {
-	margin: 0 0 3rem;
-
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
-}
-
-/* Search widget. */
-.widget_search .search-submit {
-	display: none;
-}
-
-/* Content Style */
-
 .widget-area {
 	padding-top: 3rem;
 	h2 {
-		color: #2f1339;
-		margin-bottom: 1.5rem;
+		color: $color__brand-purple;
+		margin-bottom: $base__space-unit;
 		line-height: 1.25;
-		font-family: 'Novecento Bold', sans-serif;
+		font-family: $font__accent-bold;
 		letter-spacing: 2px;
 		text-transform: uppercase;
 	}
 	p {
 		margin-bottom: 0.5rem;
-		font-family: 'Merriweather-Light', serif;
+		font-family: $font__main-light;
 		i {
 			margin-right: 0.5rem;
 		}
 		a {
-			color: #248a83;
+			color: $color__brand-green;
 			text-decoration: none;
 			&:hover {
-				color: #2f1339;	
+				color: $color__brand-purple;	
 			}
 		}
 		span {
@@ -49,7 +33,7 @@
 		}
 		span.day-of-week{
 			padding: 0;
-			font-family: 'Merriweather-Bold', serif;
+			font-family: $font__main-bold;
 		}
 	}
 	ul {
@@ -57,11 +41,11 @@
 		margin-left: 0;
 		padding-left: 0;
 		a {
-			color: #248a83;
+			color: $color__brand-green;
 			text-decoration: none;
-			font-family: 'Merriweather-Light', serif;
+			font-family: $font__main-light;
 			&:hover {
-				color: #2f1339;	
+				color: $color__brand-purple;	
 			}
 		}
 	}

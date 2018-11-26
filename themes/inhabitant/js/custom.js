@@ -1,15 +1,30 @@
-//IIFE
-//immediately invoked function expression
-
 (function($){
 
-$(document).ready(function() {
+    $(function() {
 
-    //my code here for toggling search form open and closed (.focus and .blur)
+        $('.search-submit').on('click', function(event) {
+            
+            event.preventDefault();
+      
+            $('.search-field').addClass('show');
+            $('.search-field').focus();
+        });
 
-});
+        // $('.search-submit').on('click', function() {
+        //     $('.search-field').removeClass('show');
+        // });
 
+        $('.search-field').on('blur', function() {
+            if ($(this).val() === "") {
+            $('.search-field').removeClass('show'); 
+            }
+         });
+
+    });
 })(jQuery);
+
+
+  
 
 
 

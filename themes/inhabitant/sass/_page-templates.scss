@@ -26,7 +26,7 @@ article.post {
         }
         h2, h1 {
             position: absolute;
-            background-color: #248a83;
+            background-color: $color__brand-green;
             top: 0;
             margin-top: 36px;
             padding: 12px 24px;
@@ -34,26 +34,26 @@ article.post {
             line-height: 1.25;
             color: white;
             text-transform: uppercase;
-            font-family: 'Novecento Bold', sans-serif;
+            font-family: $font__accent-bold;
             letter-spacing: 2px;
             font-size: 33.6px; 
             a {
                 color: white;
                 text-decoration: none; 
                 &:hover {
-                    color: #f0e4d1;
+                    color: $color__brand-yellow;
                 }
             }
         }
     }
     .entry-meta {
         position: absolute;
-        background-color: #248a83;
+        background-color: $color__brand-green;
         bottom: 0;
         right: 0;
         padding: 16px 24px;
         color: white;
-        font-family: 'Novecento', sans-serif;
+        font-family: $font__accent;
         text-transform: uppercase;
         line-height: 0;
         margin-bottom: 8px;
@@ -62,48 +62,48 @@ article.post {
             text-decoration: none;
             color: white;
             &:hover {
-                color: #f0e4d1;
+                color: $color__brand-yellow;
             }
         }
     }
     .entry-content {
         margin-bottom: 72px;
         p {
-            margin-bottom: 1.5rem;
-            font-family: 'Merriweather-Light', serif;
+            margin-bottom: $base__space-unit;
+            font-family: $font__main-light;
             max-width: 92%;
         }
         a {
             background-color: white;
             border: 1px solid black;
             color: black;
-            font-family: 'Novecento', sans-serif;
+            font-family: $font__accent;
             padding: .75rem 1.5rem;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 0.9rem;
             line-height: 1;
             &:hover {
-                background-color: #248a83;
+                background-color: $color__brand-green;
                 color: white;
                 border: none;
             }
         }
         span {
-            line-height: 1.75;
+            line-height: $font__line-height-body;
         }
     }
     .entry-footer {
         text-transform: uppercase;
-        font-family: 'Novecento', sans-serif;
+        font-family: $font__accent;
         margin-bottom: 20px;
         span {
             margin-right: 25px;
             a {
                 text-decoration: none;
-                color: #248a83;
+                color: $color__brand-green;
                 &:hover {
-                    color: #2f1339;
+                    color: $color__brand-purple;
                 }
             }
         }
@@ -118,14 +118,14 @@ article.post {
         padding: .75rem 1.5rem;
         &:hover {
             color: white;
-            background: #248a83;
-            border-color: #248a83;
+            background: $color__brand-green;
+            border-color: $color__brand-green;
         }
         p {
             margin: 0;
             font-size: 0.9rem;
             text-transform: uppercase;
-            font-family: 'Novecento', sans-serif;
+            font-family: $font__accent;
             i {
                 padding-right: 10px;
             }
@@ -157,17 +157,17 @@ article.post {
 
 .comments-area {
     width: 73%;
-    border-right: 1px solid #e1e1e1;
+    border-right: $border__solid;
     padding-right: 5%;
   }
 
 h2.comments-title {
     text-transform: uppercase;
     padding-top: 37px;
-    font-family: 'Novecento Bold', sans-serif;
+    font-family: $font__accent-bold;
     font-size: 2.1rem;
     letter-spacing: 2px;
-    color: #2f1339;
+    color: $color__brand-purple;
     margin-bottom: 0;
 }
 
@@ -176,7 +176,7 @@ h2.comments-title {
     padding: 0;
     list-style: none;
     li.thread-even, li.thread-odd {
-        border-bottom: 1px solid #e1e1e1;
+        border-bottom: 1$border__solid;
     }
 }
 
@@ -189,26 +189,26 @@ h2.comments-title {
     .comment-content {
         padding-left: 24px;
         .comment-author cite {
-            font-family: 'Merriweather-Bold', sans-serif;
+            font-family: $font__main-bold;
             font-style: normal;
         }
         .comment-metadata {
-            color: #808080;
-            font-family: 'Merriweather-Light', sans-serif;
+            color: $color__brand-medium-grey;
+            font-family: $font__main-light;
             a {
-                color: #248a83;
+                color: $color__brand-green;
                 text-decoration: none;
             }
         }
         p {
-            font-family: 'Merriweather-Light', sans-serif;
+            font-family: $font__main-light;
             margin-bottom: 13px;
         }
         .reply {
             padding-bottom: 24px;
             a {
             text-decoration: none;
-            color: #248a83;
+            color: $color__brand-green;
             padding-bottom: 20px;
             }
         }
@@ -216,31 +216,31 @@ h2.comments-title {
 }
 
 .children li {
-    border-top: 1px solid #e1e1e1;
+    border-top: $border__solid;
 }
 
 .comment-respond {
     .comment-reply-title {
         text-transform: uppercase;
         margin-top: 1rem;
-        font-family: 'Novecento Bold', sans-serif;
+        font-family: $font__accent-bold;
         font-size: 1.8rem;
         letter-spacing: 2px;
         margin-bottom: 22px;
     }
     form p {
         margin-top:0px;
-        font-family: 'Merriweather-Light', serif;
+        font-family: $font__main-light;
     }
     .comment-form-comment, 
     .comment-form-author, 
     .comment-form-email, 
     .comment-form-url {
         text-transform: uppercase;
-        color: #2f1339;
-        font-family: 'Novecento', sans-serif;
+        color: $color__brand-purple;
+        font-family: $font__accent;
         font-size: 1.1rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: $base__space-unit;
         margin-bottom: 15px;
         display: inline-block;
         label {
@@ -248,13 +248,13 @@ h2.comments-title {
             display: block;
         }
         span {
-            color: #d99054;
+            color: $color__brand-orange;
         }
         input {
             width: 373px;
             color: #666;
             background-color: #f4f4f4;
-            border: 1px solid #e1e1e1;
+            border: $border__solid;
             border-radius: 0;
             height: 40px;
         }
@@ -275,16 +275,16 @@ h2.comments-title {
     textarea {
         color: #666;
         background-color: #f4f4f4;
-        border: 1px solid #e1e1e1;
+        border: $border__solid;
         border-radius: 0;
         width: 761px;
     }
     input#submit {
-        background: #248a83;
+        background: $color__brand-green;
         border: none;
         border-radius: 0;
-        color: #fff;
-        font-family: 'Novecento' ,sans-serif;
+        color: $color__background-body;
+        font-family: $font__accent;
         font-size: .9rem;
         line-height: 1;
         padding: .75rem 1.5rem;
@@ -303,7 +303,7 @@ h2.comments-title {
     padding-top: 14px;
     header {
         text-align: center;
-        font-family: 'Novecento Bold', sans-serif;
+        font-family: $font__accent-bold;
         text-transform: uppercase;
         h1 {
             font-size: 2.4rem;
@@ -316,26 +316,26 @@ h2.comments-title {
             font-size: 1.2rem;
             line-height: 1.5;
             padding-bottom: 26px;
-            border-bottom: 1px dashed #c8c8c8;
+            border-bottom: $border__dashed;
             p {
                 padding: 0 1.5rem;
                 a {
                     text-decoration: none;
-                    font-family: 'Novecento', sans-serif;
-                    color: #248a83;
+                    font-family: $font__accent;
+                    color: $color__brand-green;
                     &:hover {
-                        color: #2f1339;
+                        color: $color__brand-purple;
                     }
                 }
             }
         }
         .taxonomy-description p {
             text-transform: none;
-            font-family: 'Merriweather-Light', serif;
+            font-family: $font__main-light;
             padding-top: 5px;
             font-size: 16.3px;
             padding-bottom: 49px;
-            border-bottom: 1px dashed #c8c8c8;
+            border-bottom: $border__dashed;
             margin-bottom: 0;
         }
     }
@@ -345,9 +345,9 @@ h2.comments-title {
         grid-gap: 24px;
         padding-top: 48px;
         padding-bottom: 25px;
-        font-family: 'Merriweather-Light', serif;
+        font-family: $font__main-light;
         .product-item {
-            border:1px solid #e1e1e1;
+            border: $border__solid;
             .thumbnail img {
                 height: 250px;
                 object-fit: cover;
@@ -383,7 +383,7 @@ h2.comments-title {
     h1.entry-title {
         margin-top: 0px;
         text-transform: uppercase;
-        font-family: 'Novecento Bold', sans-serif;
+        font-family: $font__accent-bold;
         font-size: 2.4rem;
         letter-spacing: 2px;
         line-height: 1.3;
@@ -400,8 +400,8 @@ h2.comments-title {
     }
     h2 {
         text-transform: uppercase;
-        color: #2f1339;
-        font-family: 'Novecento Bold', sans-serif;
+        color: $color__brand-purple;
+        font-family: $font__accent-bold;
         font-size: 2.1rem;
         letter-spacing: 2px;
         margin-top: 19px;
@@ -411,7 +411,7 @@ h2.comments-title {
         margin-top: 10px;
         margin-bottom: 18px;
         width: 95%;
-        font-family: 'Merriweather-Light', serif;
+        font-family: $font__main-light;
     }
     form {
         display: block;
@@ -421,13 +421,13 @@ h2.comments-title {
             padding-bottom: 10px;
             label {
                 text-transform: uppercase;
-                color: #2f1339;
-                font-family: 'Novecento', sans-serif;
+                color: $color__brand-purple;
+                font-family: $font__accent;
                 font-size: 1.1rem;
                 line-height: 1;
             }
             span {
-                color: #d99054;
+                color: $color__brand-orange;
             }
         }
         .box {
@@ -435,7 +435,7 @@ h2.comments-title {
             input {
                 color: #666;
                 background-color: #f4f4f4;
-                border: 1px solid #e1e1e1;
+                border: $border__solid;
                 border-radius: 0;
                 width: 380px;
                 height: 39px;
@@ -444,18 +444,18 @@ h2.comments-title {
         .big-box textarea {
             color: #666;
             background-color: #f4f4f4;
-            border: 1px solid #e1e1e1;
+            border: $border__solid;
             border-radius: 0;
             width: 760px;
             height: 286px;
             margin-bottom: 22px; 
         }
         input {
-            background: #248a83;
+            background: $color__brand-green;
             border: none;
             border-radius: 0;
-            color: #fff;
-            font-family: 'Novecento' ,sans-serif;
+            color: $color__background-body;
+            font-family: $font__accent;
             font-size: .9rem;
             line-height: 1;
             padding: .75rem 1.5rem;
@@ -487,8 +487,8 @@ article.type-product {
         margin: 0;
         h1 {
             margin-top: 0;
-            font-family: 'Novecento Bold', sans-serif;
-            color: #d99054;
+            font-family: $font__accent-bold;
+            color: $color__brand-orange;
             text-transform: uppercase;
             letter-spacing: 2px;
             font-size: 2.4rem;
@@ -496,13 +496,13 @@ article.type-product {
             margin-bottom: 7px;
         }
         p.price {
-            font-family: 'Novecento', sans-serif;
+            font-family: $font__accent;
             font-size: 1.8rem;
             margin-top: 7px;
         }
         p span {
-            line-height: 1.75;
-            font-family: 'Merriweather-Light', serif;
+            line-height: $font__line-height-body;
+            font-family: $font__main-light;
             padding-bottom: 1px;
         }
         button {
@@ -515,14 +515,14 @@ article.type-product {
             padding: .75rem 1.5rem;
             &:hover {
                 color: white;
-                background: #248a83;
-                border-color: #248a83;
+                background: $color__brand-green;
+                border-color: $color__brand-green;
             }
             p {
                 margin: 0;
                 font-size: 0.9rem;
                 text-transform: uppercase;
-                font-family: 'Novecento', sans-serif;
+                font-family: $font__accent;
                 i {
                     padding-right: 10px;
                 }
