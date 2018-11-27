@@ -1187,6 +1187,109 @@ p.copyright {
         padding: 0.75rem 1.5rem;
         line-height: 1;
         width: 138px; }
+        .page-template-front-page #primary.content-area .journal-display .entry-display a.read-more:hover {
+          background-color: #248A83;
+          color: #ffffff;
+          border-color: #248A83; }
+  .page-template-front-page #primary.content-area .latest-display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 265px);
+    grid-gap: 20px 20px; }
+    .page-template-front-page #primary.content-area .latest-display .latest-container {
+      padding: 1.5rem; }
+      .page-template-front-page #primary.content-area .latest-display .latest-container img {
+        height: 100%;
+        width: auto; }
+      .page-template-front-page #primary.content-area .latest-display .latest-container h2 {
+        position: absolute;
+        text-transform: none;
+        font-family: "Merriweather-Light", serif;
+        color: #ffffff;
+        width: 500px;
+        text-align: left;
+        margin: 0;
+        line-height: 1.25;
+        padding-top: 1.6rem; }
+        .page-template-front-page #primary.content-area .latest-display .latest-container h2:hover {
+          color: #f0e4d1;
+          cursor: pointer; }
+      .page-template-front-page #primary.content-area .latest-display .latest-container p {
+        margin-top: 11.25rem;
+        color: #ffffff;
+        border: 1px solid white;
+        padding: .75rem 1.5rem;
+        text-transform: uppercase;
+        font-family: "Novecento", sans-serif;
+        width: 133px;
+        font-size: 0.9rem;
+        line-height: 1; }
+        .page-template-front-page #primary.content-area .latest-display .latest-container p:hover {
+          background: #248A83;
+          border-color: #248A83;
+          cursor: pointer; }
+    .page-template-front-page #primary.content-area .latest-display .canoe {
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.25))), url(../../assets/images/latest-adventures/canoe-girl.jpg);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0, rgba(0, 0, 0, 0.25)), url(../../assets/images/latest-adventures/canoe-girl.jpg);
+      background-size: 950px auto;
+      background-position: center;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3; }
+      .page-template-front-page #primary.content-area .latest-display .canoe h2 {
+        font-size: 3rem; }
+    .page-template-front-page #primary.content-area .latest-display .bonfire {
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.25))), url(../../assets/images/latest-adventures/beach-bonfire.jpg);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0, rgba(0, 0, 0, 0.25)), url(../../assets/images/latest-adventures/beach-bonfire.jpg);
+      background-size: 650px auto;
+      background-position: center;
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+      .page-template-front-page #primary.content-area .latest-display .bonfire p {
+        margin-top: 9rem; }
+    .page-template-front-page #primary.content-area .latest-display .hikers {
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.25))), url(../../assets/images/latest-adventures/mountain-hikers.jpg);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0, rgba(0, 0, 0, 0.25)), url(../../assets/images/latest-adventures/mountain-hikers.jpg);
+      background-size: 650px auto;
+      background-position: center;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+      .page-template-front-page #primary.content-area .latest-display .hikers h2 {
+        font-size: 1.6rem;
+        width: 250px; }
+      .page-template-front-page #primary.content-area .latest-display .hikers p {
+        margin-top: 8.5rem; }
+    .page-template-front-page #primary.content-area .latest-display .sky {
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.25))), url(../../assets/images/latest-adventures/night-sky.jpg);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0, rgba(0, 0, 0, 0.25)), url(../../assets/images/latest-adventures/night-sky.jpg);
+      background-size: 650px auto;
+      background-position: center;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+      .page-template-front-page #primary.content-area .latest-display .sky h2 {
+        font-size: 1.6rem;
+        width: 250px; }
+      .page-template-front-page #primary.content-area .latest-display .sky p {
+        margin-top: 6.5rem; }
+  .page-template-front-page #primary.content-area p.more-adventures {
+    background: #248A83;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Novecento", sans-serif;
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+    width: 235px;
+    line-height: 1; }
+    .page-template-front-page #primary.content-area p.more-adventures:hover {
+      background: #165752;
+      cursor: pointer; }
 
 .site-header {
   border-bottom: 1px solid #e1e1e1;

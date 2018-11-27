@@ -105,8 +105,127 @@
                 letter-spacing: 0;
                 padding: 0.75rem 1.5rem;
                 line-height: 1;
-                width: 138px
+                width: 138px;
+                &:hover {
+                    background-color: $color__brand-green;
+                    color: $color__background-body;
+                    border-color: $color__brand-green;
+                }
             }
+        }
+    }
+    .latest-display {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 265px);
+        grid-gap: 20px 20px;
+        .latest-container {
+            padding: 1.5rem;
+            img {
+                height: 100%;
+                width: auto;
+            }
+            h2 {
+                position: absolute;
+                text-transform: none;
+                font-family: $font__main-light;
+                color: $color__background-body;
+                width: 500px;
+                text-align: left;
+                margin: 0;
+                line-height: 1.25;
+                padding-top: 1.6rem;
+                &:hover {
+                   color: $color__brand-yellow;
+                   cursor: pointer;
+                }
+            }
+            p{
+                margin-top: 11.25rem;
+                color: $color__background-body;
+                border: 1px solid white;
+                padding: .75rem 1.5rem;
+                text-transform: uppercase;
+                font-family: $font__accent;
+                width: 133px;
+                font-size: 0.9rem;
+                line-height: 1;
+                &:hover {
+                    background: $color__brand-green;
+                    border-color: $color__brand-green;
+                    cursor: pointer;
+                }
+            }
+        }
+        .canoe {
+            background: linear-gradient(180deg,rgba(0,0,0,.35) 0,rgba(0,0,0,.25)),url(../../assets/images/latest-adventures/canoe-girl.jpg);
+            background-size: 950px auto;
+            background-position: center; 
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            h2 {
+                font-size: 3rem;
+            }
+        }
+        .bonfire {
+            background: linear-gradient(180deg,rgba(0,0,0,.35) 0,rgba(0,0,0,.25)),url(../../assets/images/latest-adventures/beach-bonfire.jpg);
+            background-size: 650px auto;
+            background-position: center; 
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2; 
+            p{
+                margin-top: 9rem;
+            } 
+        }
+        .hikers {
+            background: linear-gradient(180deg,rgba(0,0,0,.35) 0,rgba(0,0,0,.25)),url(../../assets/images/latest-adventures/mountain-hikers.jpg);
+            background-size: 650px auto;
+            background-position: center;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3; 
+            h2 {
+                font-size: 1.6rem;
+                width: 250px;
+            } 
+            p {
+                margin-top: 8.5rem;
+            }
+        }
+        .sky {
+            background: linear-gradient(180deg,rgba(0,0,0,.35) 0,rgba(0,0,0,.25)),url(../../assets/images/latest-adventures/night-sky.jpg);
+            background-size: 650px auto;
+            background-position: center;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            h2 {
+                font-size: 1.6rem;
+                width: 250px;
+            }
+            p {
+                margin-top: 6.5rem;
+            }
+        }
+    }
+    p.more-adventures {
+        background: $color__brand-green;
+        color: $color__background-body;
+        text-transform: uppercase;
+        font-family: $font__accent;
+        font-size: 1.2rem;
+        padding: 0.75rem 1.5rem;
+        width: 235px;
+        line-height: 1;
+        &:hover {
+            background: #165752; 
+            cursor: pointer;
         }
     }
 }

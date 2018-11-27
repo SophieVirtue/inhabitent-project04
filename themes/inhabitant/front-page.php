@@ -71,7 +71,29 @@ get_header(); ?>
 </article>
 	<?php endforeach; wp_reset_postdata(); ?>
 	</div>
-    </section>
+	</section>
+	<section class="front-page-latest container-width">
+	<h2>Latest Adventures</h2>
+		<div class="latest-display">
+			<div class="latest-container canoe">
+				<h2>Getting Back to Nature in a Canoe</h2>
+				<p>Read More</p>
+			</div>
+			<div class="latest-container bonfire">
+				<h2>A Night with Friends at the Beach</h2>
+				<p>Read More</p>
+			</div>
+			<div class="latest-container hikers">
+				<h2>Taking in the View at Big Mountain</h2>
+				<p>Read More</p>
+			</div>
+			<div class="latest-container sky">
+				<h2>Star-Gazing at the Night Sky</h2>
+				<p>Read More</p>
+			</div>
+		</div>
+		<p class="more-adventures">More Adventures</p>
+	</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
