@@ -16,8 +16,9 @@ get_header(); ?>
 		class="logo" alt="Inhabitent full logo" />
 		</section>
 
-	<section class="frontpage-shop">
+	<section class="frontpage-shop container-width">
 	<h2>Shop Stuff</h2>
+	<div class="shop-display">
 	<?php
 	
 	$terms = get_terms(array(
@@ -33,16 +34,22 @@ get_header(); ?>
 		</div>
 	<?php endforeach;
 	?>
+	</div>
 	</section>
 	
 	<?php
 	/*
 	 * Get the blog journal entries
 	 */
+	?>
+	<section class="front-page-journal container-width">
+	<h2>Inhabitent Journal</h2>
+	<div class="journal-display">
+	<?php
    $args = array( 'post_type' => 'post', 'posts_per_page' => 3 ); 
    $product_posts = get_posts( $args );
  	?>
-	 <section class="front-page-journal">
+	 
 	<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
     <article class="journal-entry">
 	<?php 
@@ -50,6 +57,7 @@ get_header(); ?>
 	   the_post_thumbnail('medium');
 	} 
 	?>
+	<div class="entry-display">
 	<span class="entry-meta">
 	<?php
 	red_starter_posted_on();
@@ -58,9 +66,11 @@ get_header(); ?>
 	?>
 	</span>
 	<a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a>
-	<a class="read-more" href="<?php echo get_the_permalink(); ?>">Read More</a>
-	</article>
+	<a class="read-more" href="<?php echo get_the_permalink(); ?>">Read Entry</a>
+	</div>	
+</article>
 	<?php endforeach; wp_reset_postdata(); ?>
+	</div>
     </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

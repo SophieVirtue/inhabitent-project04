@@ -482,10 +482,6 @@ textarea {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
-.page-template-front-page #primary.content-area {
-  padding-top: 0; }
-
 /* Journal - index.php & single.php */
 #primary.content-area {
   padding: 48px 0; }
@@ -1087,7 +1083,6 @@ p.copyright {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../assets/images/home-hero.jpg);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../../assets/images/home-hero.jpg);
   height: 100vh;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1097,7 +1092,101 @@ p.copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-size: cover; }
+  background-size: cover;
+  width: 100%; }
+
+.page-template-front-page #primary.content-area {
+  padding-top: 0; }
+  .page-template-front-page #primary.content-area h2 {
+    font-family: "Novecento", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2f1339;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    padding-top: 1.9rem;
+    padding-bottom: 1.1rem; }
+  .page-template-front-page #primary.content-area .shop-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .page-template-front-page #primary.content-area .shop-display .frontpage-term {
+      border: 1px solid #e1e1e1;
+      border-top-width: 5px;
+      max-width: 263px;
+      text-align: center;
+      padding: .75rem;
+      padding-bottom: 0; }
+      .page-template-front-page #primary.content-area .shop-display .frontpage-term:hover {
+        border-color: #d99054; }
+      .page-template-front-page #primary.content-area .shop-display .frontpage-term img {
+        width: 4.4rem;
+        height: auto;
+        margin: 0 auto; }
+      .page-template-front-page #primary.content-area .shop-display .frontpage-term p {
+        font-family: "Merriweather-Light", serif;
+        padding-bottom: 0.5rem; }
+        .page-template-front-page #primary.content-area .shop-display .frontpage-term p a {
+          background: #248A83;
+          text-decoration: none;
+          color: #ffffff;
+          font-family: "Novecento", sans-serif;
+          font-size: .9rem;
+          line-height: 1;
+          padding: .75rem 1.5rem;
+          text-transform: uppercase; }
+          .page-template-front-page #primary.content-area .shop-display .frontpage-term p a:hover {
+            background: #165752; }
+  .page-template-front-page #primary.content-area .journal-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .page-template-front-page #primary.content-area .journal-display .journal-entry {
+      border: 1px solid #e1e1e1;
+      max-width: 358px;
+      text-align: center; }
+      .page-template-front-page #primary.content-area .journal-display .journal-entry img {
+        border-bottom: 1px solid #e1e1e1;
+        border-bottom-width: 5px;
+        width: auto;
+        height: 250px; }
+    .page-template-front-page #primary.content-area .journal-display .entry-display {
+      padding: 0.75rem;
+      text-align: left; }
+      .page-template-front-page #primary.content-area .journal-display .entry-display .entry-meta {
+        display: block;
+        font-size: 0.75rem;
+        line-height: 1;
+        padding-top: 0.2rem;
+        font-family: "Merriweather-Light", serif; }
+      .page-template-front-page #primary.content-area .journal-display .entry-display a {
+        display: block;
+        text-decoration: none;
+        font-family: "Novecento Bold", sans-serif;
+        text-transform: uppercase;
+        color: #248A83;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        padding-top: .35rem;
+        padding-bottom: 1.25rem;
+        line-height: 1.25; }
+        .page-template-front-page #primary.content-area .journal-display .entry-display a:hover {
+          color: #2f1339; }
+      .page-template-front-page #primary.content-area .journal-display .entry-display a.read-more {
+        border: 1px solid black;
+        color: black;
+        font-family: "Novecento", sans-serif;
+        font-size: 0.9rem;
+        letter-spacing: 0;
+        padding: 0.75rem 1.5rem;
+        line-height: 1;
+        width: 138px; }
 
 .site-header {
   border-bottom: 1px solid #e1e1e1;
