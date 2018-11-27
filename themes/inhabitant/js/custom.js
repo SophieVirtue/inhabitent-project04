@@ -2,25 +2,25 @@
 
     $(function() {
 
-        $('.search-submit').on('click', function(event) {
+
+        const $searchInput = $('.main-navigation .search-field');
+        const $searchToggle =  $('.main-navigation .search-toggle');
+
+        $searchToggle.on('mousedown', function(event) {
             
             event.preventDefault();
       
-            $('.search-field').addClass('show');
-            $('.search-field').focus();
+            $searchInput.toggleClass('show'); 
+            $searchInput.focus();
         });
 
-        // $('.search-submit').on('click', function() {
-        //     $('.search-field').removeClass('show');
-        // });
-
-        $('.search-field').on('blur', function() {
-            if ($(this).val() === "") {
-            $('.search-field').removeClass('show'); 
+        $searchInput.on('blur', function() {
+            if ($searchInput.val() === '') {
+                $searchInput.removeClass('show'); 
             }
          });
 
-    });
+    });// end doc ready
 })(jQuery);
 
 

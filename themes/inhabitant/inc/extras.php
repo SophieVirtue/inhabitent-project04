@@ -85,17 +85,6 @@ wp_add_inline_style('tent-style', $hero_css);
 
 add_action('wp_enqueue_scripts', 'inhabitant_dynamic_css');
 
-/*
- * To add the Read More button function had I not done it the other way:
- * 
- * function inhabitent_excerpt_more( $more ){
- * global $post;
- * return '<a class="read-more" href="' . get_permalink( $post->ID ) . '">Read More</a>';
- * }
- * 
- * add_filter('excerpt_more', 'inhabitent_excerpt_more');
- * /
- 
  /*
   *Modify the Product post type archive loop
   */

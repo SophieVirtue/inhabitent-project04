@@ -482,6 +482,9 @@ textarea {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.page-template-front-page #primary.content-area {
+  padding-top: 0; }
+
 /* Journal - index.php & single.php */
 #primary.content-area {
   padding: 48px 0; }
@@ -899,6 +902,9 @@ h2.comments-title {
               box-shadow: none; }
 
 /* About - about.php */
+.page-template-about #primary.content-area {
+  padding-top: 0; }
+
 /* Single product - single-product.php */
 article.type-product {
   display: -webkit-box;
@@ -1056,7 +1062,7 @@ p.copyright {
 
 .site-header {
   border-bottom: 1px solid #e1e1e1;
-  padding: .5rem 0 6px 0;
+  padding: 6.5px 0;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.85);
   z-index: 5;
@@ -1068,24 +1074,44 @@ p.copyright {
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .site-header .container-width .alt-header-logo {
+      display: none; }
     .site-header .container-width nav {
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
     .site-header .container-width img {
-      width: 52px;
+      width: 50px;
       height: auto; }
     .site-header .container-width a {
-      color: #248A83; }
+      color: #248A83;
+      font-family: "Novecento", sans-serif;
+      text-transform: uppercase;
+      text-decoration: none; }
       .site-header .container-width a:hover {
         color: #2f1339; }
+    .site-header .container-width ul {
+      list-style: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: .5rem 0; }
     .site-header .container-width li {
       padding-left: 1.5rem; }
     .site-header .container-width fieldset {
       border: 0;
       padding: 0;
       margin: 0; }
+      .site-header .container-width fieldset i {
+        color: #248A83;
+        font-size: 15.5px;
+        padding-left: 1.5rem; }
+        .site-header .container-width fieldset i:hover {
+          cursor: pointer; }
       .site-header .container-width fieldset button {
         border: 0;
         background: none;
@@ -1093,15 +1119,49 @@ p.copyright {
                 box-shadow: none;
         padding: 0; }
         .site-header .container-width fieldset button i {
-          color: #248A83;
-          font-size: 15.5px;
-          padding-left: 1.5rem; }
+          display: none; }
+      .site-header .container-width fieldset input {
+        padding: 0; }
   .site-header .search-form .search-field {
     width: 0;
     overflow: hidden;
     opacity: 0;
     -webkit-transition: 0.5s;
-    transition: 0.5s; }
+    transition: 0.5s;
+    padding-top: 3px;
+    padding-left: 0.5rem; }
   .site-header .search-form .search-field.show {
-    width: 160px;
-    opacity: 1; }
+    width: 190px;
+    opacity: 1;
+    outline: 0;
+    border: none;
+    text-transform: uppercase;
+    font-family: "Novecento", sans-serif; }
+
+.page-template-about .site-header, .page-template-front-page .site-header {
+  position: absolute;
+  border-bottom: 0;
+  background-color: transparent; }
+  .page-template-about .site-header .alt-header-logo, .page-template-front-page .site-header .alt-header-logo {
+    display: block; }
+  .page-template-about .site-header .header-logo, .page-template-front-page .site-header .header-logo {
+    display: none; }
+  .page-template-about .site-header a, .page-template-front-page .site-header a {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #323232; }
+    .page-template-about .site-header a:hover, .page-template-front-page .site-header a:hover {
+      color: #f0e4d1; }
+  .page-template-about .site-header fieldset i, .page-template-front-page .site-header fieldset i {
+    color: #ffffff; }
+    .page-template-about .site-header fieldset i:hover, .page-template-front-page .site-header fieldset i:hover {
+      cursor: pointer;
+      color: #f0e4d1; }
+  .page-template-about .site-header .search-form .search-field.show, .page-template-front-page .site-header .search-form .search-field.show {
+    background-color: transparent;
+    color: #ffffff; }
+  .page-template-about .site-header ::-webkit-input-placeholder, .page-template-front-page .site-header ::-webkit-input-placeholder {
+    color: #f0e4d1; }
+  .page-template-about .site-header ::-ms-input-placeholder, .page-template-front-page .site-header ::-ms-input-placeholder {
+    color: #f0e4d1; }
+  .page-template-about .site-header ::placeholder, .page-template-front-page .site-header ::placeholder {
+    color: #f0e4d1; }

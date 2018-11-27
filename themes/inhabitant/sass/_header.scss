@@ -1,6 +1,6 @@
 .site-header {
     border-bottom: $border__solid;
-    padding: .5rem 0 6px 0;
+    padding: 6.5px 0;
     position: fixed;
     background-color: hsla(0,0,100,.85);
     z-index: 5;
@@ -9,18 +9,30 @@
     .container-width {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        .alt-header-logo {
+            display: none;
+        }
         nav {
-            justify-content: flex-end;
+            display: flex;
         }
         img {
-            width: 52px;
+            width: 50px;
             height: auto;
         }
         a {
             color: $color__brand-green;
+            font-family: $font__accent;
+            text-transform: uppercase;
+            text-decoration: none;
             &:hover {
                 color: $color__brand-purple;
             }
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            margin: .5rem 0;
         }
         li {
             padding-left: $base__space-unit;
@@ -29,16 +41,25 @@
             border: 0;
             padding: 0;
             margin: 0;
+            i {
+                color: $color__brand-green;
+                font-size: 15.5px;
+                padding-left: 1.5rem;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
             button {
                 border: 0;
                 background: none;
                 box-shadow: none;
                 padding: 0;
                 i {
-                    color: $color__brand-green;
-                    font-size: 15.5px;
-                    padding-left: 1.5rem;
+                    display: none;
                 }
+            }
+            input {
+                padding: 0;
             }
         }
 	} 
@@ -46,10 +67,52 @@
 		width: 0;
 		overflow: hidden;
 		opacity: 0;
-		transition: 0.5s;
+        transition: 0.5s;
+        padding-top: 3px;
+        padding-left: 0.5rem;
 	}
 	.search-form .search-field.show {
-		width: 160px;
-		opacity: 1;
+		width: 190px;
+        opacity: 1;
+        outline: 0;
+        border: none;
+        text-transform: uppercase;
+        font-family: $font__accent;
 	}
 }
+
+.page-template-about .site-header, .page-template-front-page .site-header {
+    position: absolute;
+    border-bottom: 0;
+    background-color: transparent;
+    .alt-header-logo {
+        display: block;
+    }
+    .header-logo {
+        display: none;
+    }
+    a {
+        color: $color__background-body;
+        text-shadow: 1px 1px 2px #323232;
+        &:hover {
+            color: $color__brand-yellow;
+        }
+    }
+    fieldset {
+        i {
+            color: $color__background-body;
+            &:hover {
+                cursor: pointer;
+                color: $color__brand-yellow;
+            }
+        }
+    }
+    .search-form .search-field.show {
+        background-color: transparent;
+        color: $color__background-body;
+    }
+    ::placeholder { 
+        color: $color__brand-yellow;
+    }
+} 
+

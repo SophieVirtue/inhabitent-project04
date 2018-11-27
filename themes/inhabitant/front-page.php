@@ -19,7 +19,7 @@ get_header(); ?>
 	<section class="frontpage-shop">
 	<h2>Shop Stuff</h2>
 	<?php
-	//get the terms for our products and do some clever stuff with images
+	
 	$terms = get_terms(array(
 		'taxonomy' => 'product_type', 
 		'hide_empty' => 0,

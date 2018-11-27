@@ -4,6 +4,10 @@
 
 /* Front page */
 
+.page-template-front-page #primary.content-area {
+    padding-top: 0;
+}
+
 /* Journal - index.php & single.php */
 #primary.content-area {
     padding: 48px 0;
@@ -470,6 +474,10 @@ h2.comments-title {
 }
 
 /* About - about.php */
+
+.page-template-about #primary.content-area {
+    padding-top: 0;
+}
 
 /* Single product - single-product.php */
 

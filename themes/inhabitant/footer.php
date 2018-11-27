@@ -34,7 +34,7 @@
                     	</a>
                     </div><!-- .logo-footer -->
 				</div><!-- .site-info -->
-				<p class="copyright">Copyright &copy 2019 Inhabitent</p>
+				<p class="copyright">Copyright &copy; 2019 Inhabitent</p>
 			  </div><!-- .container-width -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
