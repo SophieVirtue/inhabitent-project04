@@ -1,0 +1,112 @@
+.search-no-results {
+    fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 0.5rem;
+        span {
+            display: none;
+        }
+        button {
+            display: none;
+        }
+        input {
+            background-color: #f4f4f4;
+            border-radius: 0;
+            border: $border__solid;
+            font-family: $font__main-light;
+            padding: 0.3rem;
+        }
+    }
+    header h1 {
+        border-bottom: $border__solid;
+        padding-bottom: 0.25rem;
+        width: 93%;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.search #primary.content-area{
+    padding-top: 0.85rem;
+    h1 {
+        text-transform: uppercase;
+        font-family: $font__accent-bold;
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        border-bottom: $border__solid;
+        padding-bottom: 0.85rem;
+        width: 93%;
+        margin-bottom: 0;
+    }
+    article {
+        display: block;
+        padding-top: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    header.entry-header {
+        width: 100%;
+    }
+    h2 {
+        margin-bottom: 1rem; 
+        a {
+            text-decoration: none;
+            font-family: $font__accent-bold;
+            text-transform: uppercase;
+            color: $color__brand-green;
+            font-size: 2.1rem;
+            letter-spacing: 2px; 
+            width: 100%; 
+            &:hover {
+                color: $color__brand-purple;
+            }    
+        } 
+    }
+    p {
+        font-family: $font__main-light;
+        width: 91%;
+        padding-bottom: 0.5rem;
+    } 
+    a.button {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+        font-family: $font__accent;
+        padding: .75rem 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        line-height: 1;
+        &:hover {
+            background-color: $color__brand-green;
+            color: white;
+            border: $color__brand-green;
+        }
+    }
+    nav {
+        border-top: $border__solid;
+        width: 93%;
+        margin-top: 4.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.6rem;
+        span{
+            text-decoration: none;
+            font-family: $font__accent;
+            background-color: $color__brand-medium-grey;
+            color: white;
+            padding: 0.4rem 0.8rem;
+            margin-right: 0.3rem;
+        }
+        a{
+            text-decoration: none;
+            font-family: $font__accent;
+            background-color: $color__brand-green;
+            color: white;
+            padding: 0.4rem 0.8rem;
+            margin-right: 0.3rem;
+            text-transform: uppercase;
+            &:hover {
+                background-color: $color__brand-purple;
+            }
+        }
+    }
+}

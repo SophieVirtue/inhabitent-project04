@@ -309,7 +309,7 @@ html {
   margin-right: auto;
   width: 1120px; }
 
-body.blog .site-content, body.post-template-default .site-content, body.page-template-default .site-content, body.search-results .site-content, body.date .site-content, body.category .site-content, body.tag .site-content, body.error404 .site-content {
+body.blog .site-content, body.post-template-default .site-content, body.page-template-default .site-content, body.search-results .site-content, body.date .site-content, body.category .site-content, body.tag .site-content, body.error404 .site-content, body.search .site-content, body.search-no-results .site-content {
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
@@ -317,11 +317,11 @@ body.blog .site-content, body.post-template-default .site-content, body.page-tem
   display: -ms-flexbox;
   display: flex;
   padding-top: 49px; }
-  body.blog .site-content .content-area, body.post-template-default .site-content .content-area, body.page-template-default .site-content .content-area, body.search-results .site-content .content-area, body.date .site-content .content-area, body.category .site-content .content-area, body.tag .site-content .content-area, body.error404 .site-content .content-area {
+  body.blog .site-content .content-area, body.post-template-default .site-content .content-area, body.page-template-default .site-content .content-area, body.search-results .site-content .content-area, body.date .site-content .content-area, body.category .site-content .content-area, body.tag .site-content .content-area, body.error404 .site-content .content-area, body.search .site-content .content-area, body.search-no-results .site-content .content-area {
     width: 73%;
     border-right: 1px solid #e1e1e1;
     padding-right: 5%; }
-  body.blog .site-content .widget-area, body.post-template-default .site-content .widget-area, body.page-template-default .site-content .widget-area, body.search-results .site-content .widget-area, body.date .site-content .widget-area, body.category .site-content .widget-area, body.tag .site-content .widget-area, body.error404 .site-content .widget-area {
+  body.blog .site-content .widget-area, body.post-template-default .site-content .widget-area, body.page-template-default .site-content .widget-area, body.search-results .site-content .widget-area, body.date .site-content .widget-area, body.category .site-content .widget-area, body.tag .site-content .widget-area, body.error404 .site-content .widget-area, body.search .site-content .widget-area, body.search-no-results .site-content .widget-area {
     width: 27%;
     padding-left: 5%; }
 
@@ -1007,7 +1007,7 @@ div.site-info {
           flex-direction: row;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 70px 0 50px 0; }
+  padding: 60px 0 50px 0; }
   div.site-info p {
     color: white; }
   div.site-info div.contact-info {
@@ -1443,3 +1443,96 @@ p.copyright {
         color: #2f1339; }
   .error404 #primary.content-area .widget p {
     margin-bottom: 0.5rem; }
+
+.search-no-results fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.5rem; }
+  .search-no-results fieldset span {
+    display: none; }
+  .search-no-results fieldset button {
+    display: none; }
+  .search-no-results fieldset input {
+    background-color: #f4f4f4;
+    border-radius: 0;
+    border: 1px solid #e1e1e1;
+    font-family: "Merriweather-Light", serif;
+    padding: 0.3rem; }
+
+.search-no-results header h1 {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 0.25rem;
+  width: 93%;
+  margin-bottom: 2.5rem; }
+
+.search #primary.content-area {
+  padding-top: 0.85rem; }
+  .search #primary.content-area h1 {
+    text-transform: uppercase;
+    font-family: "Novecento Bold", sans-serif;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 0.85rem;
+    width: 93%;
+    margin-bottom: 0; }
+  .search #primary.content-area article {
+    display: block;
+    padding-top: 1.2rem;
+    margin-bottom: 1.5rem; }
+  .search #primary.content-area header.entry-header {
+    width: 100%; }
+  .search #primary.content-area h2 {
+    margin-bottom: 1rem; }
+    .search #primary.content-area h2 a {
+      text-decoration: none;
+      font-family: "Novecento Bold", sans-serif;
+      text-transform: uppercase;
+      color: #248A83;
+      font-size: 2.1rem;
+      letter-spacing: 2px;
+      width: 100%; }
+      .search #primary.content-area h2 a:hover {
+        color: #2f1339; }
+  .search #primary.content-area p {
+    font-family: "Merriweather-Light", serif;
+    width: 91%;
+    padding-bottom: 0.5rem; }
+  .search #primary.content-area a.button {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-family: "Novecento", sans-serif;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    line-height: 1; }
+    .search #primary.content-area a.button:hover {
+      background-color: #248A83;
+      color: white;
+      border: #248A83; }
+  .search #primary.content-area nav {
+    border-top: 1px solid #e1e1e1;
+    width: 93%;
+    margin-top: 4.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.6rem; }
+    .search #primary.content-area nav span {
+      text-decoration: none;
+      font-family: "Novecento", sans-serif;
+      background-color: #808080;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      margin-right: 0.3rem; }
+    .search #primary.content-area nav a {
+      text-decoration: none;
+      font-family: "Novecento", sans-serif;
+      background-color: #248A83;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      margin-right: 0.3rem;
+      text-transform: uppercase; }
+      .search #primary.content-area nav a:hover {
+        background-color: #2f1339; }
