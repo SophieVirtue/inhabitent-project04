@@ -1,21 +1,27 @@
-# RED Starter
+# Inhabitent Camping Supply Co.
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A camping supply website, which includes a blog, a shop section, and various other pages.
 
 ## Installation
 
-### 1. Download me (don't clone me!)
+**Run locally with Gulp:**
 
-Then add me to your `wp-content` directory.
+`> npm install`
 
-### 2. Rename the `redstarter-master` directory
+**Build for production:**
 
-Make sure that the theme directory name is project appropriate!
+`> npx gulp`
 
-### 3. Install the dev dependencies
+## Technologies Used
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+Wordpress, Javascript, PHP, CSS, HTML.
 
-### 4. Update the proxy in `gulpfile.js`
+## Learnings
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+My time could have been better managed to finish this project.  The styling took longer than expected, and I seemed to keep finding new pages to style!  I feel like I've started getting faster with css, and have been better at using variables.
+
+As a first wordpress project, I was able to effectively alter the php of a few pages based off of the examples provided in the code-alongs.
+
+## Acknowledgement
+
+The starter theme was provided by RED Academy, and was forked from Underscores. 
