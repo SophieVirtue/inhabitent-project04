@@ -1,0 +1,58 @@
+.error404 #primary.content-area {
+    padding-top: 0.8rem;
+    padding-bottom: 6rem;
+    h1 {
+        text-transform: uppercase;
+        font-family: $font__accent-bold;
+        letter-spacing: 2px;
+        font-size: 2.4rem;
+        margin-bottom: 0.9rem;
+    }
+    p {
+        margin-top: 0.9rem;
+        font-family: $font__main-light;
+    }
+    fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 0.5rem;
+        span {
+            display: none;
+        }
+        button {
+            display: none;
+        }
+        input {
+            background-color: #f4f4f4;
+            border-radius: 0;
+            border: $border__solid;
+            font-family: $font__main-light;
+            padding: 0.3rem;
+        }
+    }
+    h2{
+        text-transform: uppercase;
+        font-family: $font__accent-bold;
+        color: $color__brand-purple;
+        letter-spacing: 2px;
+        margin-top: 2.15rem;
+        margin-bottom: 1.1rem;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 2.75rem;
+        a {
+            text-decoration: none;
+            color: $color__brand-green;
+            font-family: $font__main-light;
+            &:hover {
+                color: $color__brand-purple;
+            }
+        }
+    }
+    .widget p {
+        margin-bottom: 0.5rem;
+    }
+}

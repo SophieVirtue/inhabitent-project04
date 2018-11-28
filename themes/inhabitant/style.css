@@ -309,7 +309,7 @@ html {
   margin-right: auto;
   width: 1120px; }
 
-body.blog .site-content, body.post-template-default .site-content, body.page-template-default .site-content, body.search-results .site-content, body.date .site-content, body.category .site-content, body.tag .site-content {
+body.blog .site-content, body.post-template-default .site-content, body.page-template-default .site-content, body.search-results .site-content, body.date .site-content, body.category .site-content, body.tag .site-content, body.error404 .site-content {
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
@@ -317,11 +317,11 @@ body.blog .site-content, body.post-template-default .site-content, body.page-tem
   display: -ms-flexbox;
   display: flex;
   padding-top: 49px; }
-  body.blog .site-content .content-area, body.post-template-default .site-content .content-area, body.page-template-default .site-content .content-area, body.search-results .site-content .content-area, body.date .site-content .content-area, body.category .site-content .content-area, body.tag .site-content .content-area {
+  body.blog .site-content .content-area, body.post-template-default .site-content .content-area, body.page-template-default .site-content .content-area, body.search-results .site-content .content-area, body.date .site-content .content-area, body.category .site-content .content-area, body.tag .site-content .content-area, body.error404 .site-content .content-area {
     width: 73%;
     border-right: 1px solid #e1e1e1;
     padding-right: 5%; }
-  body.blog .site-content .widget-area, body.post-template-default .site-content .widget-area, body.page-template-default .site-content .widget-area, body.search-results .site-content .widget-area, body.date .site-content .widget-area, body.category .site-content .widget-area, body.tag .site-content .widget-area {
+  body.blog .site-content .widget-area, body.post-template-default .site-content .widget-area, body.page-template-default .site-content .widget-area, body.search-results .site-content .widget-area, body.date .site-content .widget-area, body.category .site-content .widget-area, body.tag .site-content .widget-area, body.error404 .site-content .widget-area {
     width: 27%;
     padding-left: 5%; }
 
@@ -1057,7 +1057,7 @@ div.site-info {
       margin: 0;
       padding: 8px 0 8px 0; }
     div.site-info div.business-hours span.days {
-      font-family: "Merriweather", serif; }
+      font-family: "Merriweather-Bold", serif; }
   div.site-info div.logo-footer {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -1396,3 +1396,50 @@ p.copyright {
     color: #f0e4d1; }
   .page-template-about .site-header ::placeholder, .page-template-front-page .site-header ::placeholder {
     color: #f0e4d1; }
+
+.error404 #primary.content-area {
+  padding-top: 0.8rem;
+  padding-bottom: 6rem; }
+  .error404 #primary.content-area h1 {
+    text-transform: uppercase;
+    font-family: "Novecento Bold", sans-serif;
+    letter-spacing: 2px;
+    font-size: 2.4rem;
+    margin-bottom: 0.9rem; }
+  .error404 #primary.content-area p {
+    margin-top: 0.9rem;
+    font-family: "Merriweather-Light", serif; }
+  .error404 #primary.content-area fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5rem; }
+    .error404 #primary.content-area fieldset span {
+      display: none; }
+    .error404 #primary.content-area fieldset button {
+      display: none; }
+    .error404 #primary.content-area fieldset input {
+      background-color: #f4f4f4;
+      border-radius: 0;
+      border: 1px solid #e1e1e1;
+      font-family: "Merriweather-Light", serif;
+      padding: 0.3rem; }
+  .error404 #primary.content-area h2 {
+    text-transform: uppercase;
+    font-family: "Novecento Bold", sans-serif;
+    color: #2f1339;
+    letter-spacing: 2px;
+    margin-top: 2.15rem;
+    margin-bottom: 1.1rem; }
+  .error404 #primary.content-area ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2.75rem; }
+    .error404 #primary.content-area ul a {
+      text-decoration: none;
+      color: #248A83;
+      font-family: "Merriweather-Light", serif; }
+      .error404 #primary.content-area ul a:hover {
+        color: #2f1339; }
+  .error404 #primary.content-area .widget p {
+    margin-bottom: 0.5rem; }
