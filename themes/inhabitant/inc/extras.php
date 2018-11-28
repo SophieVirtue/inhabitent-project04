@@ -29,7 +29,10 @@ function my_login_logo() { ?>
 		width:320px;
 		background-size: 320px auto;
 		background-repeat: no-repeat;
-        }
+		}
+		body.login .button{
+			background-color: #248A83;
+		}
     </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
