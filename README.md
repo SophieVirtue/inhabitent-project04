@@ -2,9 +2,9 @@
 
 A camping supply website, which includes a Blog, a Shop section, an About page, a Find Us page, and a serach function.
 
-![](Giphy1.gif)
+![](Giphy01.gif)
 
-![](Giphy2.gif)
+![](Giphy02.gif)
 
 ## Technologies Used
 
