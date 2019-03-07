@@ -5,6 +5,8 @@
 !themes/
 !uploads/
 !README.md
+!Giphy01.gif
+!Giphy02.gif
 # Ignore everything in "plugins" except certain plugins. #
 plugins/*
 !plugins/inhabitent_functionality/
