@@ -1,6 +1,6 @@
 # Inhabitent Camping Supply Co.
 
-A camping supply website, which includes a Blog, a Shop section, an About page, a Find Us page, and a serach function.
+A camping supply website, which includes a Blog, a Shop section, an About page, a Find Us page, and a search function.
 
 ![](Giphy01.gif)
 
